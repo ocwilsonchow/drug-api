@@ -9,7 +9,7 @@ export const router = new sst.aws.Router("ApiRouter", {
   waf: { rateLimitPerIp: 200 },
 })
 
-const hono = new sst.aws.Function("Hono", {
+export const hono = new sst.aws.Function("Hono", {
   handler: "apps/api/src/lambda.handler",
   link: [databaseUrl, betterAuthSecret],
   url: {
