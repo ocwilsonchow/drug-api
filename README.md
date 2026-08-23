@@ -1,159 +1,150 @@
-# Turborepo starter
+# Drug API
 
-This Turborepo starter is maintained by the Turborepo core team.
+Backend API for [drug.slchow.com](https://drug.slchow.com). A Bun + Turborepo monorepo deployed with [SST](https://sst.dev) to AWS Lambda in `ap-southeast-1`.
 
-## Using this example
+## Stack
 
-Run the following command:
+- **Runtime:** [Bun](https://bun.sh) 1.3, Node `>=24`
+- **API:** [Hono](https://hono.dev) + [@hono/zod-openapi](https://github.com/honojs/middleware/tree/main/packages/zod-openapi)
+- **Auth:** [Better Auth](https://www.better-auth.com) (email/password, admin, organizations)
+- **Database:** Postgres via [Drizzle ORM](https://orm.drizzle.team)
+- **Infra:** SST v4 (`sst.aws.Function` + `sst.aws.Router`)
+- **Docs:** OpenAPI 3 + [Scalar](https://scalar.com)
 
-```sh
-npx create-turbo@latest
+## Repository
+
+```
+apps/
+  api/                 Hono app (Lambda handler)
+packages/
+  auth/                Better Auth server + React client
+  db/                  Drizzle client, schema, migrations
+  infra/               SST resources, domain, secrets
+sst.config.ts          SST app entry
 ```
 
-## What's inside?
+| Package        | Name          | Role                                                                 |
+| -------------- | ------------- | -------------------------------------------------------------------- |
+| `apps/api`     | `api`         | HTTP API: CORS, errors, auth mount, OpenAPI, health                  |
+| `packages/auth`| `@repo/auth`  | `betterAuth` server, React client, session cookie helper             |
+| `packages/db`  | `@repo/db`    | Postgres client + Drizzle schema (auth tables today)                 |
+| `packages/infra`| `@repo/infra` | Domain, ports, SST secrets, API Router + Lambda                      |
 
-This Turborepo includes the following packages/apps:
+## Prerequisites
 
-### Apps and Packages
+- [Bun](https://bun.sh) 1.3.14
+- Node 24+
+- AWS CLI with SSO session `sinlongchow` and profile `drug-api`
+- A Postgres URL (SSL required) and a Better Auth secret
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed (recommended):
+## Setup
 
 ```sh
-cd my-turborepo
-turbo build
+bun install
+bun run sso
 ```
 
-Without global `turbo`, use your package manager:
+Set SST secrets for each stage you use (`local`, `dev`, …):
 
 ```sh
-cd my-turborepo
-npx turbo build
-bun dlx turbo build
-bun exec turbo build
+bunx sst secret set DATABASE_URL "postgres://..." --stage local
+bunx sst secret set BETTER_AUTH_SECRET "..." --stage local
 ```
 
-You can build a specific package by using a [filter](https://turborepo.dev/docs/crafting-your-repository/running-tasks#using-filters):
-
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed:
+Apply schema, then start the live AWS dev environment:
 
 ```sh
-turbo build --filter=docs
+bun run db:migrate
+bun run dev:local
 ```
 
-Without global `turbo`:
+The API is served through the SST Router at `https://{stage}.api.drug.slchow.com`.
+
+## Scripts
+
+| Script             | Description                                              |
+| ------------------ | -------------------------------------------------------- |
+| `bun run sso`      | AWS SSO login (`sinlongchow`)                            |
+| `bun run dev:local`| `sst dev --stage local`                                  |
+| `bun run deploy:dev`| `sst deploy --stage dev`                                |
+| `bun run db:generate` | Generate Drizzle migrations                           |
+| `bun run db:migrate`  | Run migrations                                        |
+| `bun run db:push`     | Push schema without a migration                       |
+| `bun run db:studio`   | Open Drizzle Studio                                   |
+| `bun run auth:generate` | Regenerate auth tables into `packages/db/schema/auth.ts` |
+| `bun run lint`     | Lint all workspaces                                      |
+| `bun run check-types` | Typecheck all workspaces                              |
+| `bun run format`   | Prettier                                                 |
+
+DB and auth scripts run inside `sst shell --stage local` so they can read linked secrets.
+
+## API
+
+Lambda entry: `apps/api/src/lambda.ts` → `apps/api/src/app.ts`.
+
+| Method     | Path              | Description                          |
+| ---------- | ----------------- | ------------------------------------ |
+| `GET`      | `/api/health`     | Liveness (`{ ok: true }`)            |
+| `GET/POST` | `/api/auth/*`     | Better Auth (sign-in, session, …)    |
+| `GET`      | `/doc`            | OpenAPI JSON (app routes)            |
+| `GET`      | `/reference`      | Scalar UI (Auth + App specs)         |
+
+Auth OpenAPI is also at `/api/auth/open-api/generate-schema`.
+
+Errors use a consistent envelope:
+
+```json
+{ "ok": false, "errors": [{ "message": "...", "source": "validation|not_found|server" }] }
+```
+
+Validation failures return `422`. CORS allows the stage web/API hosts and `localhost` (see `packages/infra/ports.ts`).
+
+### Adding a route
+
+1. Create `apps/api/src/routes/<name>/{routes,handlers,index}.ts` with `createRoute` + a handler.
+2. Mount it from `apps/api/src/app.ts` (same pattern as `health`).
+
+## Auth
+
+Configured in `packages/auth/server.ts`.
+
+- **Base URL:** `https://{stage}.api.drug.slchow.com`
+- **Email + password** enabled; **sign-up is disabled**
+- Plugins: admin, organization, OpenAPI, last-login method, multi-session, Next.js cookies
+- Cookies: `drug.slchow.com-{stage}` prefix; cross-subdomain on non-local stages
+- Client: `@repo/auth/client` (`authReactClient`)
+
+After changing Better Auth options that affect the schema:
 
 ```sh
-npx turbo build --filter=docs
-bun exec turbo build --filter=docs
-bun exec turbo build --filter=docs
+bun run auth:generate
+bun run db:generate
+bun run db:migrate
 ```
 
-### Develop
+## Database
 
-To develop all apps and packages, run the following command:
+`packages/db` uses Drizzle against `Resource.DATABASE_URL` with `ssl: "require"`. Schema lives in `packages/db/schema/` and currently exports Better Auth tables (`user`, `session`, `account`, `verification`, `organization`, `member`, `invitation`).
 
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed (recommended):
+Tables matching `mastra_*` are ignored by Drizzle Kit so an external store can share the same database.
 
-```sh
-cd my-turborepo
-turbo dev
-```
+## Infrastructure
 
-Without global `turbo`, use your package manager:
+`sst.config.ts` loads `packages/infra/secrets` then `packages/infra/api`.
 
-```sh
-cd my-turborepo
-npx turbo dev
-bun exec turbo dev
-bun exec turbo dev
-```
+| Resource            | Type              | Notes                                                                 |
+| ------------------- | ----------------- | --------------------------------------------------------------------- |
+| `DATABASE_URL`      | `sst.Secret`      | Postgres connection string                                            |
+| `BETTER_AUTH_SECRET`| `sst.Secret`      | Better Auth signing secret                                            |
+| `ApiRouter`         | `sst.aws.Router`  | `{stage}.api.drug.slchow.com`, OAC + edge signing, WAF 200 req/IP     |
+| `Hono`              | `sst.aws.Function`| Handler `apps/api/src/lambda.handler`, linked to both secrets         |
 
-You can develop a specific package by using a [filter](https://turborepo.dev/docs/crafting-your-repository/running-tasks#using-filters):
+AWS profile is `drug-api`, region `ap-southeast-1`.
 
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed:
+| Stage        | Removal   | Protect |
+| ------------ | --------- | ------- |
+| `local`      | remove    | no      |
+| `dev`        | remove    | no      |
+| `production` | retain    | yes     |
 
-```sh
-turbo dev --filter=web
-```
-
-Without global `turbo`:
-
-```sh
-npx turbo dev --filter=web
-bun exec turbo dev --filter=web
-bun exec turbo dev --filter=web
-```
-
-### Remote Caching
-
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turborepo.dev/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed (recommended):
-
-```sh
-cd my-turborepo
-turbo login
-```
-
-Without global `turbo`, use your package manager:
-
-```sh
-cd my-turborepo
-npx turbo login
-bun exec turbo login
-bun exec turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed:
-
-```sh
-turbo link
-```
-
-Without global `turbo`:
-
-```sh
-npx turbo link
-bun exec turbo link
-bun exec turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turborepo.dev/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.dev/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.dev/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.dev/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.dev/docs/reference/configuration)
-- [CLI Usage](https://turborepo.dev/docs/reference/command-line-reference)
+Shared constants: `packages/infra/domain.ts` (`drug.slchow.com`) and `packages/infra/ports.ts` (local CORS / client ports).
