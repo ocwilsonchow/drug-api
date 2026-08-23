@@ -12,7 +12,8 @@
     "db:push": "bunx sst shell --stage local -- bun run --filter @repo/db db:push",
     "db:studio": "bunx sst shell --stage local -- bun run --filter @repo/db db:studio",
     "dev:local": "bunx sst dev --stage local",
-    "deploy:dev": "bunx sst deploy --stage dev"
+    "deploy:dev": "bunx sst deploy --stage dev",
+    "deploy:preview": "bunx sst deploy --stage preview"
   },
   "devDependencies": {
     "@types/aws-lambda": "8.10.162",
