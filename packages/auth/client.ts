@@ -1,6 +1,4 @@
-import { ports } from "@repo/infra/ports"
-import { domain } from "@repo/infra/domain"
-import { Resource } from "sst"
+import { apiOrigin } from "@repo/infra/origins"
 import { createAuthClient } from "better-auth/react"
 import {
   adminClient,
@@ -14,10 +12,7 @@ import {
 import { apiKeyClient } from "@better-auth/api-key/client"
 
 export const authReactClient = createAuthClient({
-  baseURL:
-    Resource.App.stage === "local"
-      ? `http://localhost:${ports.api}`
-      : `https://api.${domain}`,
+  baseURL: apiOrigin(),
   fetchOptions: {
     credentials: "include",
   },

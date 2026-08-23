@@ -6,7 +6,24 @@ import { domain } from "./domain"
 export const router = new sst.aws.Router("ApiRouter", {
   domain: `${$app.stage}.api.${domain}`,
   protection: "oac-with-edge-signing",
-  waf: { rateLimitPerIp: 200 },
+  waf: {
+    rateLimitPerIp: 200,
+    logging: { include: "blocked" },
+  },
+  transform: {
+    cachePolicy: {
+      minTtl: 0,
+      defaultTtl: 0,
+      maxTtl: 0,
+      parametersInCacheKeyAndForwardedToOrigin: {
+        cookiesConfig: { cookieBehavior: "none" },
+        headersConfig: { headerBehavior: "none" },
+        queryStringsConfig: { queryStringBehavior: "none" },
+        enableAcceptEncodingBrotli: false,
+        enableAcceptEncodingGzip: false,
+      },
+    },
+  },
 })
 
 export const hono = new sst.aws.Function("Hono", {

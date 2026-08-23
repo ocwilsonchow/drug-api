@@ -1,7 +1,7 @@
 import { drizzleAdapter } from "@better-auth/drizzle-adapter"
 import { db } from "@repo/db"
 import { domain } from "@repo/infra/domain"
-import { ports } from "@repo/infra/ports"
+import { apiOrigin, trustedOrigins } from "@repo/infra/origins"
 import { betterAuth } from "better-auth"
 import { nextCookies } from "better-auth/next-js"
 import {
@@ -19,32 +19,22 @@ export type AuthType = {
 }
 
 export const auth = betterAuth({
-  baseURL: `https://${Resource.App.stage}.api.${domain}`,
+  baseURL: apiOrigin(),
   secret: Resource.BETTER_AUTH_SECRET.value,
-  trustedOrigins: [`https://${Resource.App.stage}.api.${domain}`],
+  trustedOrigins: trustedOrigins(),
   session: { deferSessionRefresh: true },
   advanced: {
-    cookiePrefix:
-      Resource.App.stage === "local"
-        ? `${domain}-local`
-        : `${domain}-${Resource.App.stage}`,
-    ...(Resource.App.stage === "local"
-      ? {
-          defaultCookieAttributes: {
-            sameSite: "lax" as const,
-            secure: false,
-          },
-        }
-      : {
-          crossSubDomainCookies: {
-            enabled: true,
-            domain: "." + domain,
-          },
-          defaultCookieAttributes: {
-            sameSite: "lax" as const,
-            secure: true,
-          },
-        }),
+    cookiePrefix: `${domain}-${Resource.App.stage}`,
+    // App host ({stage}.drug.slchow.com) shares these cookies; treat
+    // every *.drug.slchow.com subdomain as in-scope.
+    crossSubDomainCookies: {
+      enabled: true,
+      domain: "." + domain,
+    },
+    defaultCookieAttributes: {
+      sameSite: "lax" as const,
+      secure: true,
+    },
   },
   database: drizzleAdapter(db, {
     provider: "pg",
