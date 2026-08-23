@@ -6,8 +6,8 @@
 
 declare module "sst" {
   export interface Resource {
-    "Api": {
-      "type": "sst.aws.ApiGatewayV2"
+    "ApiRouter": {
+      "type": "sst.aws.Router"
       "url": string
     }
     "BETTER_AUTH_SECRET": {
@@ -21,6 +21,7 @@ declare module "sst" {
     "Hono": {
       "name": string
       "type": "sst.aws.Function"
+      "url": string
     }
   }
 }
