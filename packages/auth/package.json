@@ -1,0 +1,31 @@
+{
+  "name": "@repo/auth",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./server": "./server.ts",
+    "./client": "./client.ts",
+    "./cookie": "./cookie.ts"
+  },
+  "scripts": {
+    "auth:generate": "bun x auth@latest generate --config ./server.ts --output ../db/schema/auth.ts -y",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@better-auth/api-key": "1.7.1",
+    "@better-auth/drizzle-adapter": "1.7.1",
+    "@better-auth/oauth-provider": "1.7.1",
+    "@repo/db": "workspace:*",
+    "@repo/infra": "workspace:*",
+    "better-auth": "1.7.1",
+    "pg": "^8.23.0",
+    "postgres": "^3.4.9"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
