@@ -23,20 +23,20 @@ packages/
 sst.config.ts          SST app entry
 ```
 
-| Package         | Name           | Role                                                    |
-| --------------- | -------------- | ------------------------------------------------------- |
-| `apps/api`      | `api`          | HTTP API: CORS, errors, auth mount, OpenAPI, health     |
-| `packages/auth` | `@repo/auth`   | `betterAuth` server, React client, session cookie helper |
-| `packages/db`   | `@repo/db`     | Postgres client + Drizzle schema (auth tables today)    |
-| `packages/infra`| `@repo/infra`  | Domain, origins, SST secrets, API Router + Lambda       |
+| Package          | Name          | Role                                                     |
+| ---------------- | ------------- | -------------------------------------------------------- |
+| `apps/api`       | `api`         | HTTP API: CORS, errors, auth mount, OpenAPI, health      |
+| `packages/auth`  | `@repo/auth`  | `betterAuth` server, React client, session cookie helper |
+| `packages/db`    | `@repo/db`    | Postgres client + Drizzle schema (auth tables today)     |
+| `packages/infra` | `@repo/infra` | Domain, origins, SST secrets, API Router + Lambda        |
 
 Hosts are derived from `packages/infra/domain.ts` via `packages/infra/origins.ts`:
 
-| Helper            | URL                                         |
-| ----------------- | ------------------------------------------- |
-| `appOrigin()`     | `https://{stage}.{domain}`                  |
-| `apiOrigin()`     | `https://{stage}.api.{domain}`              |
-| `trustedOrigins()`| app + API origins (CORS and Better Auth)    |
+| Helper             | URL                                      |
+| ------------------ | ---------------------------------------- |
+| `appOrigin()`      | `https://{stage}.{domain}`               |
+| `apiOrigin()`      | `https://{stage}.api.{domain}`           |
+| `trustedOrigins()` | app + API origins (CORS and Better Auth) |
 
 ## Prerequisites
 
@@ -70,19 +70,19 @@ The API is served through the SST Router at `https://{stage}.api.{domain}`.
 
 ## Scripts
 
-| Script                | Description                                              |
-| --------------------- | -------------------------------------------------------- |
-| `bun run sso`         | AWS SSO login                                            |
-| `bun run dev:local`   | `sst dev --stage local`                                  |
-| `bun run deploy:dev`  | `sst deploy --stage dev`                                 |
-| `bun run db:generate` | Generate Drizzle migrations                              |
-| `bun run db:migrate`  | Run migrations                                           |
-| `bun run db:push`     | Push schema without a migration                          |
-| `bun run db:studio`   | Open Drizzle Studio                                      |
+| Script                  | Description                                              |
+| ----------------------- | -------------------------------------------------------- |
+| `bun run sso`           | AWS SSO login                                            |
+| `bun run dev:local`     | `sst dev --stage local`                                  |
+| `bun run deploy:dev`    | `sst deploy --stage dev`                                 |
+| `bun run db:generate`   | Generate Drizzle migrations                              |
+| `bun run db:migrate`    | Run migrations                                           |
+| `bun run db:push`       | Push schema without a migration                          |
+| `bun run db:studio`     | Open Drizzle Studio                                      |
 | `bun run auth:generate` | Regenerate auth tables into `packages/db/schema/auth.ts` |
-| `bun run lint`        | Lint all workspaces                                      |
-| `bun run check-types` | Typecheck all workspaces                                 |
-| `bun run format`      | Prettier                                                 |
+| `bun run lint`          | Lint all workspaces                                      |
+| `bun run check-types`   | Typecheck all workspaces                                 |
+| `bun run format`        | Prettier                                                 |
 
 DB and auth scripts run inside `sst shell --stage local` so they can read linked secrets.
 
@@ -90,16 +90,18 @@ DB and auth scripts run inside `sst shell --stage local` so they can read linked
 
 Lambda entry: `apps/api/src/lambda.ts` → `apps/api/src/app.ts`.
 
-| Method     | Path                     | Description                                      |
-| ---------- | ------------------------ | ------------------------------------------------ |
-| `GET`      | `/api/health`            | Liveness (`{ ok: true }`)                        |
-| `GET`      | `/api/drug-classes`      | Paginated drug classes (`page`, `pageSize`)      |
-| `GET`      | `/api/drug-classes/:slug`| Drug class by slug                               |
-| `GET`      | `/api/drugs`             | Paginated drugs (`page`, `pageSize`)             |
-| `GET`      | `/api/drugs/:slug`       | Drug by slug                                     |
-| `GET/POST` | `/api/auth/*`            | Better Auth (sign-in, session, …)                |
-| `GET`      | `/doc`                   | OpenAPI JSON (app routes)                        |
-| `GET`      | `/reference`             | Scalar UI (Auth + App specs)                     |
+| Method     | Path                      | Auth | Description                                 |
+| ---------- | ------------------------- | ---- | ------------------------------------------- |
+| `GET`      | `/api/health`             | no   | Liveness (`{ ok: true }`)                   |
+| `GET`      | `/api/drug-classes`       | yes  | Paginated drug classes (`page`, `pageSize`) |
+| `GET`      | `/api/drug-classes/:slug` | yes  | Drug class by slug                          |
+| `GET`      | `/api/drugs`              | yes  | Paginated drugs (`page`, `pageSize`)        |
+| `GET`      | `/api/drugs/:slug`        | yes  | Drug by slug                                |
+| `GET/POST` | `/api/auth/*`             | no   | Better Auth (sign-in, session, …)           |
+| `GET`      | `/doc`                    | no   | OpenAPI JSON (app routes)                   |
+| `GET`      | `/reference`              | no   | Scalar UI (Auth + App specs)                |
+
+All `/api/*` routes require a Better Auth session except `/api/health` and `/api/auth/*`. Unauthenticated requests return `401` with `source: "unauthorized"`. Session is read from the request cookie (or `Authorization` header) via `auth.api.getSession`.
 
 Auth OpenAPI is also at `/api/auth/open-api/generate-schema`.
 
@@ -108,15 +110,21 @@ CORS allows `trustedOrigins()` only (stage app + API hosts) and sends credential
 Errors use a consistent envelope:
 
 ```json
-{ "ok": false, "errors": [{ "message": "...", "source": "validation|not_found|server" }] }
+{
+  "ok": false,
+  "errors": [
+    { "message": "...", "source": "validation|not_found|unauthorized|server" }
+  ]
+}
 ```
 
-Validation failures return `422`. On `production`, unhandled 500s hide the exception message.
+Validation failures return `422`. Missing auth returns `401`. On `production`, unhandled 500s hide the exception message.
 
 ### Adding a route
 
 1. Create `apps/api/src/routes/<name>/{routes,handlers,index}.ts` with `createRoute` + a handler.
 2. Mount it from `apps/api/src/app.ts` (same pattern as `health`).
+3. New `/api/*` routes are authenticated by default. Opt out only by adding the path in `apps/api/src/lib/require-auth.ts`.
 
 ## Auth
 
@@ -147,12 +155,12 @@ Tables matching `mastra_*` are ignored by Drizzle Kit so an external store can s
 
 `sst.config.ts` loads `packages/infra/secrets` then `packages/infra/api`.
 
-| Resource             | Type               | Notes                                                              |
-| -------------------- | ------------------ | ------------------------------------------------------------------ |
-| `DATABASE_URL`       | `sst.Secret`       | Postgres connection string                                         |
-| `BETTER_AUTH_SECRET` | `sst.Secret`       | Better Auth signing secret                                         |
-| `ApiRouter`          | `sst.aws.Router`   | `{stage}.api.{domain}`, OAC + edge signing, WAF 200 req/IP         |
-| `Hono`               | `sst.aws.Function` | Handler `apps/api/src/lambda.handler`, linked to both secrets      |
+| Resource             | Type               | Notes                                                         |
+| -------------------- | ------------------ | ------------------------------------------------------------- |
+| `DATABASE_URL`       | `sst.Secret`       | Postgres connection string                                    |
+| `BETTER_AUTH_SECRET` | `sst.Secret`       | Better Auth signing secret                                    |
+| `ApiRouter`          | `sst.aws.Router`   | `{stage}.api.{domain}`, OAC + edge signing, WAF 200 req/IP    |
+| `Hono`               | `sst.aws.Function` | Handler `apps/api/src/lambda.handler`, linked to both secrets |
 
 The Router is configured not to cache (TTL 0, nothing in the cache key). WAF logs blocked requests only.
 

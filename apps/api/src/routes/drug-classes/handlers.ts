@@ -1,7 +1,17 @@
 import type { RouteHandler } from "@hono/zod-openapi"
 import { offsetFor, paginationMeta } from "@/lib/pagination"
 import type { AppBindings } from "@/lib/types"
-import { asc, count, db, drug, drugClass, eq, inArray } from "@repo/db"
+import {
+  asc,
+  count,
+  db,
+  drug,
+  drugClass,
+  drugClassIndication,
+  eq,
+  inArray,
+  indication,
+} from "@repo/db"
 import type { GetDrugClassRoute, ListDrugClassesRoute } from "./routes"
 
 function toDrugRef(row: typeof drug.$inferSelect) {
@@ -12,15 +22,25 @@ function toDrugRef(row: typeof drug.$inferSelect) {
   }
 }
 
+function toIndicationRef(row: typeof indication.$inferSelect) {
+  return {
+    id: row.id,
+    name: row.name,
+    slug: row.slug,
+  }
+}
+
 function toDrugClass(
   row: typeof drugClass.$inferSelect,
-  drugs: Array<typeof drug.$inferSelect>
+  drugs: Array<typeof drug.$inferSelect>,
+  indications: Array<typeof indication.$inferSelect>
 ) {
   return {
     id: row.id,
     name: row.name,
     slug: row.slug,
     drugs: drugs.map(toDrugRef),
+    indications: indications.map(toIndicationRef),
   }
 }
 
@@ -49,6 +69,41 @@ async function drugsForClasses(classIds: number[]) {
   return drugsByClassId
 }
 
+async function indicationsForClasses(classIds: number[]) {
+  if (classIds.length === 0) {
+    return new Map<number, Array<typeof indication.$inferSelect>>()
+  }
+
+  const rows = await db
+    .select({
+      drugClassId: drugClassIndication.drugClassId,
+      indication,
+    })
+    .from(drugClassIndication)
+    .innerJoin(
+      indication,
+      eq(drugClassIndication.indicationId, indication.id)
+    )
+    .where(inArray(drugClassIndication.drugClassId, classIds))
+    .orderBy(asc(indication.id))
+
+  const indicationsByClassId = new Map<
+    number,
+    Array<typeof indication.$inferSelect>
+  >()
+
+  for (const row of rows) {
+    const existing = indicationsByClassId.get(row.drugClassId)
+    if (existing) {
+      existing.push(row.indication)
+    } else {
+      indicationsByClassId.set(row.drugClassId, [row.indication])
+    }
+  }
+
+  return indicationsByClassId
+}
+
 export const listDrugClassesHandler: RouteHandler<
   ListDrugClassesRoute,
   AppBindings
@@ -65,11 +120,21 @@ export const listDrugClassesHandler: RouteHandler<
     .limit(pageSize)
     .offset(offsetFor(page, pageSize))
 
-  const drugsByClassId = await drugsForClasses(rows.map((row) => row.id))
+  const classIds = rows.map((row) => row.id)
+  const [drugsByClassId, indicationsByClassId] = await Promise.all([
+    drugsForClasses(classIds),
+    indicationsForClasses(classIds),
+  ])
 
   return c.json(
     {
-      data: rows.map((row) => toDrugClass(row, drugsByClassId.get(row.id) ?? [])),
+      data: rows.map((row) =>
+        toDrugClass(
+          row,
+          drugsByClassId.get(row.id) ?? [],
+          indicationsByClassId.get(row.id) ?? []
+        )
+      ),
       pagination: paginationMeta(page, pageSize, total),
     },
     200
@@ -103,7 +168,17 @@ export const getDrugClassHandler: RouteHandler<
     )
   }
 
-  const drugsByClassId = await drugsForClasses([row.id])
+  const [drugsByClassId, indicationsByClassId] = await Promise.all([
+    drugsForClasses([row.id]),
+    indicationsForClasses([row.id]),
+  ])
 
-  return c.json(toDrugClass(row, drugsByClassId.get(row.id) ?? []), 200)
+  return c.json(
+    toDrugClass(
+      row,
+      drugsByClassId.get(row.id) ?? [],
+      indicationsByClassId.get(row.id) ?? []
+    ),
+    200
+  )
 }

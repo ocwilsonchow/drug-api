@@ -1,11 +1,17 @@
 import { db } from "../index.ts";
 import { seedDrugClasses } from "./drug-class.ts";
 import { seedDrugs } from "./drug.ts";
+import { seedIndications } from "./indication.ts";
+import { seedDrugClassIndications } from "./drug-class-indication.ts";
 
 async function main() {
   const classCount = await seedDrugClasses();
   const drugCount = await seedDrugs();
-  console.log(`Seeded ${classCount} drug classes and ${drugCount} drugs`);
+  const indicationCount = await seedIndications();
+  const linkCount = await seedDrugClassIndications();
+  console.log(
+    `Seeded ${classCount} drug classes, ${drugCount} drugs, ${indicationCount} indications, and ${linkCount} drug-class/indication links`,
+  );
 }
 
 main()

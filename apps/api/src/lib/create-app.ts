@@ -3,10 +3,7 @@ import { logger } from "hono/logger"
 import { requestId } from "hono/request-id"
 import { HTTPException } from "hono/http-exception"
 import { createRouter } from "@/lib/create-router"
-import {
-  isProductionStage,
-  trustedOrigins,
-} from "@repo/infra/origins"
+import { isProductionStage, trustedOrigins } from "@repo/infra/origins"
 
 export async function createApp() {
   const app = createRouter()
@@ -49,7 +46,12 @@ export async function createApp() {
       return c.json(
         {
           ok: false,
-          errors: [{ message: err.message, source: "server" }],
+          errors: [
+            {
+              message: err.message,
+              source: err.status === 401 ? "unauthorized" : "server",
+            },
+          ],
         },
         err.status
       )

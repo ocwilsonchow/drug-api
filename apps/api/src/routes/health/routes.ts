@@ -10,6 +10,7 @@ export const healthCheckRoute = createRoute({
   path: "/health",
   summary: "Health",
   description: "Check if the service is running",
+  security: [],
   responses: {
     200: {
       description: "Service is healthy",

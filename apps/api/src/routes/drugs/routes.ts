@@ -1,4 +1,5 @@
 import { createRoute, z } from "@hono/zod-openapi"
+import { ErrorResponseSchema, unauthorizedResponse } from "@/lib/errors"
 import {
   PaginationQuerySchema,
   paginatedResponseSchema,
@@ -25,16 +26,6 @@ export const GetDrugParamsSchema = z.object({
   slug: z.string().min(1),
 })
 
-export const ErrorResponseSchema = z.object({
-  ok: z.literal(false),
-  errors: z.array(
-    z.object({
-      message: z.string(),
-      source: z.enum(["validation", "not_found", "server"]),
-    })
-  ),
-})
-
 export const listDrugsRoute = createRoute({
   tags: ["Drugs"],
   method: "get",
@@ -53,6 +44,7 @@ export const listDrugsRoute = createRoute({
         },
       },
     },
+    401: unauthorizedResponse,
   },
 })
 
@@ -74,6 +66,7 @@ export const getDrugRoute = createRoute({
         },
       },
     },
+    401: unauthorizedResponse,
     404: {
       description: "Drug not found",
       content: {

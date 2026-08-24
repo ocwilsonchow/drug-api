@@ -1,4 +1,5 @@
 import type { AppOpenAPI } from "@/lib/types"
+import { requireAuth } from "@/lib/require-auth"
 import { auth } from "@repo/auth/server"
 import { Context } from "hono"
 
@@ -7,4 +8,5 @@ export function configureBetterAuth(app: AppOpenAPI) {
   app.on(["POST", "GET"], "/api/auth/*", (c: Context) => {
     return auth.handler(c.req.raw)
   })
+  app.use("*", requireAuth)
 }

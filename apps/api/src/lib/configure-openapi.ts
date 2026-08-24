@@ -19,6 +19,7 @@ export function configureOpenAPI(app: AppOpenAPI) {
       version: "1.0.0",
       description: "API documentation",
     },
+    security: [{ cookie: [] }],
   })
 
   // Scalar API Reference UI

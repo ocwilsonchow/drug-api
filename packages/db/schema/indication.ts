@@ -1,9 +1,8 @@
 import { relations } from "drizzle-orm";
 import { integer, pgTable, text, timestamp } from "drizzle-orm/pg-core";
-import { drug } from "./drug.ts";
 import { drugClassIndication } from "./drug-class-indication.ts";
 
-export const drugClass = pgTable("drug_class", {
+export const indication = pgTable("indication", {
   id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
   name: text("name").notNull(),
   slug: text("slug").notNull().unique(),
@@ -14,7 +13,6 @@ export const drugClass = pgTable("drug_class", {
     .notNull(),
 });
 
-export const drugClassRelations = relations(drugClass, ({ many }) => ({
-  drugs: many(drug),
+export const indicationRelations = relations(indication, ({ many }) => ({
   drugClassIndications: many(drugClassIndication),
 }));

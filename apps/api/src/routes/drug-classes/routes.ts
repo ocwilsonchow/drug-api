@@ -1,4 +1,5 @@
 import { createRoute, z } from "@hono/zod-openapi"
+import { ErrorResponseSchema, unauthorizedResponse } from "@/lib/errors"
 import {
   PaginationQuerySchema,
   paginatedResponseSchema,
@@ -10,11 +11,18 @@ export const DrugRefSchema = z.object({
   slug: z.string(),
 })
 
+export const IndicationRefSchema = z.object({
+  id: z.number().int(),
+  name: z.string(),
+  slug: z.string(),
+})
+
 export const DrugClassSchema = z.object({
   id: z.number().int(),
   name: z.string(),
   slug: z.string(),
   drugs: z.array(DrugRefSchema),
+  indications: z.array(IndicationRefSchema),
 })
 
 export const ListDrugClassesQuerySchema = PaginationQuerySchema
@@ -24,16 +32,6 @@ export const ListDrugClassesResponseSchema =
 
 export const GetDrugClassParamsSchema = z.object({
   slug: z.string().min(1),
-})
-
-export const ErrorResponseSchema = z.object({
-  ok: z.literal(false),
-  errors: z.array(
-    z.object({
-      message: z.string(),
-      source: z.enum(["validation", "not_found", "server"]),
-    })
-  ),
 })
 
 export const listDrugClassesRoute = createRoute({
@@ -54,6 +52,7 @@ export const listDrugClassesRoute = createRoute({
         },
       },
     },
+    401: unauthorizedResponse,
   },
 })
 
@@ -75,6 +74,7 @@ export const getDrugClassRoute = createRoute({
         },
       },
     },
+    401: unauthorizedResponse,
     404: {
       description: "Drug class not found",
       content: {

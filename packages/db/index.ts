@@ -14,3 +14,5 @@ export type Database = typeof db
 export { and, asc, count, desc, eq, inArray } from "drizzle-orm"
 export { drugClass } from "./schema/drug-class.ts"
 export { drug } from "./schema/drug.ts"
+export { indication } from "./schema/indication.ts"
+export { drugClassIndication } from "./schema/drug-class-indication.ts"

@@ -1,0 +1,1717 @@
+[
+  {
+    "id": 1,
+    "name": "Acne vulgaris",
+    "slug": "acne-vulgaris",
+    "classSlugs": [
+      "oestrogens-and-progestogens",
+      "tetracyclines",
+      "trimethoprim"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Acute coronary syndrome",
+    "slug": "acute-coronary-syndrome",
+    "classSlugs": [
+      "antiplatelet-adp-receptor-antagonists",
+      "aspirin",
+      "beta-blockers",
+      "fibrinolytic-drugs",
+      "heparins-and-fondaparinux",
+      "nitrates",
+      "statins"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Adrenal insufficiency",
+    "slug": "adrenal-insufficiency",
+    "classSlugs": [
+      "corticosteroids-systemic"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Alcohol withdrawal reactions",
+    "slug": "alcohol-withdrawal-reactions",
+    "classSlugs": [
+      "benzodiazepines",
+      "vitamins"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Allergic rhinitis",
+    "slug": "allergic-rhinitis",
+    "classSlugs": [
+      "antihistamines",
+      "leukotriene-receptor-antagonists"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Alzheimer's disease",
+    "slug": "alzheimers-disease",
+    "classSlugs": [
+      "acetylcholinesterase-inhibitors"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Anaemia",
+    "slug": "anaemia",
+    "classSlugs": [
+      "iron",
+      "vitamins"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Anaesthesia",
+    "slug": "anaesthesia",
+    "classSlugs": [
+      "adrenaline",
+      "lidocaine",
+      "benzodiazepines"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Anaphylaxis",
+    "slug": "anaphylaxis",
+    "classSlugs": [
+      "adrenaline",
+      "antihistamines",
+      "corticosteroids-systemic"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Androgenetic alopecia",
+    "slug": "androgenetic-alopecia",
+    "classSlugs": [
+      "5-alpha-reductase-inhibitors"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Anxiety",
+    "slug": "anxiety",
+    "classSlugs": [
+      "venlafaxine-and-mirtazapine",
+      "benzodiazepines",
+      "gabapentin-and-pregabalin"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Arrhythmias",
+    "slug": "arrhythmias",
+    "classSlugs": [
+      "adenosine",
+      "amiodarone",
+      "antimuscarinics-cardiovascular-and-gastrointestinal",
+      "beta-blockers",
+      "calcium-channel-blockers",
+      "digoxin"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Ascites",
+    "slug": "ascites",
+    "classSlugs": [
+      "aldosterone-antagonists",
+      "loop-diuretics"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Asthma",
+    "slug": "asthma",
+    "classSlugs": [
+      "antimuscarinics-bronchodilators",
+      "beta-2-agonists",
+      "corticosteroids-inhaled",
+      "corticosteroids-systemic",
+      "leukotriene-receptor-antagonists"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Atrial fibrillation",
+    "slug": "atrial-fibrillation",
+    "classSlugs": [
+      "amiodarone",
+      "beta-blockers",
+      "digoxin",
+      "doacs",
+      "warfarin"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Atrial flutter",
+    "slug": "atrial-flutter",
+    "classSlugs": [
+      "amiodarone"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Bacterial conjunctivitis",
+    "slug": "bacterial-conjunctivitis",
+    "classSlugs": [
+      "chloramphenicol"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Bacterial vaginosis",
+    "slug": "bacterial-vaginosis",
+    "classSlugs": [
+      "metronidazole"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Benign prostatic enlargement",
+    "slug": "benign-prostatic-enlargement",
+    "classSlugs": [
+      "5-alpha-reductase-inhibitors",
+      "alpha-blockers"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Bipolar disorder",
+    "slug": "bipolar-disorder",
+    "classSlugs": [
+      "antipsychotics-first-generation",
+      "antipsychotics-second-generation",
+      "lamotrigine",
+      "valproate"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Bone and joint infection",
+    "slug": "bone-and-joint-infection",
+    "classSlugs": [
+      "vancomycin",
+      "penicillins-broad-spectrum",
+      "penicillins"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Bowel preparation",
+    "slug": "bowel-preparation",
+    "classSlugs": [
+      "laxatives-osmotic",
+      "laxatives-stimulant"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Bradycardia",
+    "slug": "bradycardia",
+    "classSlugs": [
+      "antimuscarinics-cardiovascular-and-gastrointestinal"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Cancer",
+    "slug": "cancer",
+    "classSlugs": [
+      "bisphosphonates",
+      "corticosteroids-systemic",
+      "sex-hormone-antagonists-breast-cancer",
+      "methotrexate"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Carbon monoxide poisoning",
+    "slug": "carbon-monoxide-poisoning",
+    "classSlugs": [
+      "oxygen"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Cardiac arrest",
+    "slug": "cardiac-arrest",
+    "classSlugs": [
+      "adrenaline",
+      "amiodarone"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Chronic kidney disease",
+    "slug": "chronic-kidney-disease",
+    "classSlugs": [
+      "angiotensin-receptor-blockers",
+      "ace-inhibitors",
+      "calcium-and-vitamin-d"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Chronic obstructive pulmonary disease",
+    "slug": "chronic-obstructive-pulmonary-disease",
+    "classSlugs": [
+      "antimuscarinics-bronchodilators",
+      "beta-2-agonists",
+      "corticosteroids-inhaled",
+      "macrolides"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Cirrhotic liver disease",
+    "slug": "cirrhotic-liver-disease",
+    "classSlugs": [
+      "aldosterone-antagonists",
+      "laxatives-osmotic",
+      "laxatives-stimulant"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Clostridioides difficile colitis",
+    "slug": "clostridioides-difficile-colitis",
+    "classSlugs": [
+      "vancomycin",
+      "metronidazole"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Conjunctivitis",
+    "slug": "conjunctivitis",
+    "classSlugs": [
+      "chloramphenicol"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Constipation",
+    "slug": "constipation",
+    "classSlugs": [
+      "laxatives-osmotic",
+      "laxatives-stimulant"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Contraception",
+    "slug": "contraception",
+    "classSlugs": [
+      "oestrogens-and-progestogens"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "COVID-19",
+    "slug": "covid-19",
+    "classSlugs": [
+      "antiviral-drugs",
+      "corticosteroids-systemic"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Croup",
+    "slug": "croup",
+    "classSlugs": [
+      "adrenaline",
+      "corticosteroids-systemic"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Deep vein thrombosis",
+    "slug": "deep-vein-thrombosis",
+    "classSlugs": [
+      "doacs",
+      "heparins-and-fondaparinux",
+      "warfarin"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Dementia",
+    "slug": "dementia",
+    "classSlugs": [
+      "acetylcholinesterase-inhibitors"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Dementia in Parkinson's disease",
+    "slug": "dementia-in-parkinsons-disease",
+    "classSlugs": [
+      "acetylcholinesterase-inhibitors"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Dental infection",
+    "slug": "dental-infection",
+    "classSlugs": [
+      "metronidazole"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Depression",
+    "slug": "depression",
+    "classSlugs": [
+      "ssris",
+      "venlafaxine-and-mirtazapine",
+      "tricyclic-antidepressants"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Diabetic ketoacidosis",
+    "slug": "diabetic-ketoacidosis",
+    "classSlugs": [
+      "insulin"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Diabetic nephropathy",
+    "slug": "diabetic-nephropathy",
+    "classSlugs": [
+      "angiotensin-receptor-blockers",
+      "ace-inhibitors"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Diabetic neuropathy",
+    "slug": "diabetic-neuropathy",
+    "classSlugs": [
+      "venlafaxine-and-mirtazapine",
+      "gabapentin-and-pregabalin"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Dry eyes",
+    "slug": "dry-eyes",
+    "classSlugs": [
+      "acetylcysteine",
+      "ocular-lubricants"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Dry skin",
+    "slug": "dry-skin",
+    "classSlugs": [
+      "emollients"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Dyslipidaemia",
+    "slug": "dyslipidaemia",
+    "classSlugs": [
+      "statins"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Dyspepsia",
+    "slug": "dyspepsia",
+    "classSlugs": [
+      "alginates-and-antacids",
+      "h2-receptor-antagonists",
+      "proton-pump-inhibitors"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Eczema",
+    "slug": "eczema",
+    "classSlugs": [
+      "corticosteroids-topical",
+      "emollients"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Endocarditis",
+    "slug": "endocarditis",
+    "classSlugs": [
+      "aminoglycosides",
+      "vancomycin",
+      "penicillins"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Epiglottitis",
+    "slug": "epiglottitis",
+    "classSlugs": [
+      "cephalosporins-and-carbapenems",
+      "chloramphenicol"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Epilepsy",
+    "slug": "epilepsy",
+    "classSlugs": [
+      "benzodiazepines",
+      "carbamazepine",
+      "gabapentin-and-pregabalin",
+      "lamotrigine",
+      "levetiracetam",
+      "valproate"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Epistaxis",
+    "slug": "epistaxis",
+    "classSlugs": []
+  },
+  {
+    "id": 53,
+    "name": "Erectile dysfunction",
+    "slug": "erectile-dysfunction",
+    "classSlugs": [
+      "pde5-inhibitors"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Faecal impaction",
+    "slug": "faecal-impaction",
+    "classSlugs": []
+  },
+  {
+    "id": 55,
+    "name": "Fever",
+    "slug": "fever",
+    "classSlugs": [
+      "aspirin",
+      "nsaids",
+      "paracetamol"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Fungal infections",
+    "slug": "fungal-infections",
+    "classSlugs": [
+      "antifungal-drugs"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Gastro-oesophageal reflux disease",
+    "slug": "gastro-oesophageal-reflux-disease",
+    "classSlugs": [
+      "alginates-and-antacids",
+      "h2-receptor-antagonists",
+      "proton-pump-inhibitors"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Gastroenteritis (severe)",
+    "slug": "gastroenteritis-severe",
+    "classSlugs": [
+      "quinolones"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Glaucoma",
+    "slug": "glaucoma",
+    "classSlugs": [
+      "prostaglandin-analogue-eye-drops"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Gout",
+    "slug": "gout",
+    "classSlugs": [
+      "allopurinol",
+      "nsaids"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Guillain–Barré syndrome",
+    "slug": "guillain-barre-syndrome",
+    "classSlugs": []
+  },
+  {
+    "id": 62,
+    "name": "Haemorrhage",
+    "slug": "haemorrhage",
+    "classSlugs": [
+      "adrenaline"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Haemophilia A",
+    "slug": "haemophilia-a",
+    "classSlugs": []
+  },
+  {
+    "id": 64,
+    "name": "Heart failure",
+    "slug": "heart-failure",
+    "classSlugs": [
+      "aldosterone-antagonists",
+      "angiotensin-receptor-blockers",
+      "ace-inhibitors",
+      "beta-blockers",
+      "digoxin",
+      "loop-diuretics"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Helicobacter pylori infection",
+    "slug": "helicobacter-pylori-infection",
+    "classSlugs": [
+      "macrolides",
+      "metronidazole",
+      "penicillins-broad-spectrum",
+      "proton-pump-inhibitors"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Hepatic encephalopathy",
+    "slug": "hepatic-encephalopathy",
+    "classSlugs": [
+      "laxatives-osmotic",
+      "laxatives-stimulant"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Hepatitis virus B or C infection",
+    "slug": "hepatitis-virus-b-or-c-infection",
+    "classSlugs": [
+      "antiviral-drugs"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Herpesvirus infection",
+    "slug": "herpesvirus-infection",
+    "classSlugs": [
+      "antiviral-drugs"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "HIV infection",
+    "slug": "hiv-infection",
+    "classSlugs": [
+      "antiviral-drugs",
+      "trimethoprim"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Hormone replacement therapy",
+    "slug": "hormone-replacement-therapy",
+    "classSlugs": [
+      "oestrogens-and-progestogens"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Hypercalcaemia",
+    "slug": "hypercalcaemia",
+    "classSlugs": [
+      "bisphosphonates",
+      "loop-diuretics"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Hyperosmolar hyperglycaemic state",
+    "slug": "hyperosmolar-hyperglycaemic-state",
+    "classSlugs": [
+      "insulin"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Hyperkalaemia",
+    "slug": "hyperkalaemia",
+    "classSlugs": [
+      "beta-2-agonists",
+      "calcium-and-vitamin-d",
+      "insulin"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Hypertension",
+    "slug": "hypertension",
+    "classSlugs": [
+      "alpha-blockers",
+      "angiotensin-receptor-blockers",
+      "ace-inhibitors",
+      "beta-blockers",
+      "calcium-channel-blockers",
+      "thiazide-diuretics",
+      "nitrates"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Hyperuricaemia",
+    "slug": "hyperuricaemia",
+    "classSlugs": [
+      "allopurinol"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Hypocalcaemia",
+    "slug": "hypocalcaemia",
+    "classSlugs": [
+      "calcium-and-vitamin-d"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Hypoglycaemia",
+    "slug": "hypoglycaemia",
+    "classSlugs": []
+  },
+  {
+    "id": 78,
+    "name": "Hypokalaemia",
+    "slug": "hypokalaemia",
+    "classSlugs": []
+  },
+  {
+    "id": 79,
+    "name": "Hypopituitarism",
+    "slug": "hypopituitarism",
+    "classSlugs": [
+      "corticosteroids-systemic",
+      "thyroid-hormones"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Hypothyroidism",
+    "slug": "hypothyroidism",
+    "classSlugs": [
+      "thyroid-hormones"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Hypoxaemia",
+    "slug": "hypoxaemia",
+    "classSlugs": [
+      "oxygen"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Immunisation",
+    "slug": "immunisation",
+    "classSlugs": []
+  },
+  {
+    "id": 83,
+    "name": "Induction of labour",
+    "slug": "induction-of-labour",
+    "classSlugs": []
+  },
+  {
+    "id": 84,
+    "name": "Infective exacerbation of COPD",
+    "slug": "infective-exacerbation-of-copd",
+    "classSlugs": [
+      "corticosteroids-systemic",
+      "macrolides",
+      "penicillins-broad-spectrum",
+      "quinolones",
+      "tetracyclines"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Inflammatory arthritis",
+    "slug": "inflammatory-arthritis",
+    "classSlugs": [
+      "aminosalicylates",
+      "corticosteroids-systemic",
+      "methotrexate",
+      "nsaids"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Inflammatory bowel disease",
+    "slug": "inflammatory-bowel-disease",
+    "classSlugs": [
+      "aminosalicylates",
+      "corticosteroids-systemic",
+      "methotrexate"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Influenza",
+    "slug": "influenza",
+    "classSlugs": [
+      "antiviral-drugs"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Insomnia",
+    "slug": "insomnia",
+    "classSlugs": [
+      "benzodiazepines",
+      "z-drugs"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Intraabdominal infection",
+    "slug": "intraabdominal-infection",
+    "classSlugs": [
+      "aminoglycosides",
+      "metronidazole",
+      "penicillins-antipseudomonal",
+      "penicillins-broad-spectrum",
+      "tetracyclines"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Irritable bowel syndrome",
+    "slug": "irritable-bowel-syndrome",
+    "classSlugs": [
+      "antimuscarinics-cardiovascular-and-gastrointestinal",
+      "tricyclic-antidepressants"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Ischaemic heart disease",
+    "slug": "ischaemic-heart-disease",
+    "classSlugs": [
+      "angiotensin-receptor-blockers",
+      "ace-inhibitors",
+      "antiplatelet-adp-receptor-antagonists",
+      "aspirin",
+      "beta-blockers",
+      "calcium-channel-blockers",
+      "heparins-and-fondaparinux",
+      "nitrates",
+      "statins"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Leg cramps",
+    "slug": "leg-cramps",
+    "classSlugs": [
+      "quinine"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Lower urinary tract symptoms",
+    "slug": "lower-urinary-tract-symptoms",
+    "classSlugs": [
+      "5-alpha-reductase-inhibitors",
+      "alpha-blockers"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Lyme disease",
+    "slug": "lyme-disease",
+    "classSlugs": [
+      "tetracyclines"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Malaria",
+    "slug": "malaria",
+    "classSlugs": [
+      "quinine",
+      "tetracyclines"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Mechanical heart valves",
+    "slug": "mechanical-heart-valves",
+    "classSlugs": [
+      "warfarin"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Medical termination of pregnancy",
+    "slug": "medical-termination-of-pregnancy",
+    "classSlugs": []
+  },
+  {
+    "id": 98,
+    "name": "Megaloblastic anaemia",
+    "slug": "megaloblastic-anaemia",
+    "classSlugs": [
+      "vitamins"
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Meningitis",
+    "slug": "meningitis",
+    "classSlugs": [
+      "cephalosporins-and-carbapenems",
+      "corticosteroids-systemic",
+      "penicillins"
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Menopause",
+    "slug": "menopause",
+    "classSlugs": [
+      "oestrogens-and-progestogens"
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Menorrhagia",
+    "slug": "menorrhagia",
+    "classSlugs": [
+      "iron"
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Migraine",
+    "slug": "migraine",
+    "classSlugs": [
+      "tricyclic-antidepressants",
+      "beta-blockers",
+      "serotonin-5ht1-agonists",
+      "valproate"
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Motion sickness",
+    "slug": "motion-sickness",
+    "classSlugs": [
+      "antiemetics-histamine-h1-antagonists"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Mucolytics",
+    "slug": "mucolytics",
+    "classSlugs": [
+      "acetylcysteine"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Myeloma",
+    "slug": "myeloma",
+    "classSlugs": [
+      "bisphosphonates",
+      "corticosteroids-systemic"
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Nasal polyps",
+    "slug": "nasal-polyps",
+    "classSlugs": []
+  },
+  {
+    "id": 107,
+    "name": "Nausea and vomiting",
+    "slug": "nausea-and-vomiting",
+    "classSlugs": [
+      "antiemetics-dopamine-d2-antagonists",
+      "antiemetics-histamine-h1-antagonists",
+      "antiemetics-5ht3-antagonists",
+      "antihistamines",
+      "antipsychotics-first-generation"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Neuropathic pain",
+    "slug": "neuropathic-pain",
+    "classSlugs": [
+      "venlafaxine-and-mirtazapine",
+      "tricyclic-antidepressants",
+      "carbamazepine",
+      "gabapentin-and-pregabalin"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Obsessive compulsive disorder",
+    "slug": "obsessive-compulsive-disorder",
+    "classSlugs": [
+      "ssris"
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Ocular hypertension",
+    "slug": "ocular-hypertension",
+    "classSlugs": [
+      "prostaglandin-analogue-eye-drops"
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Oedema, peripheral or pulmonary",
+    "slug": "oedema-peripheral-or-pulmonary",
+    "classSlugs": [
+      "aldosterone-antagonists",
+      "loop-diuretics",
+      "nitrates",
+      "opioids-strong",
+      "opioids-weak-moderate",
+      "oxygen"
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Opioid toxicity",
+    "slug": "opioid-toxicity",
+    "classSlugs": [
+      "naloxone"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Osteoarthritis",
+    "slug": "osteoarthritis",
+    "classSlugs": [
+      "nsaids",
+      "opioids-strong",
+      "opioids-weak-moderate",
+      "paracetamol"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Osteoporosis",
+    "slug": "osteoporosis",
+    "classSlugs": [
+      "bisphosphonates",
+      "calcium-and-vitamin-d"
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Otitis externa",
+    "slug": "otitis-externa",
+    "classSlugs": [
+      "aminoglycosides",
+      "chloramphenicol",
+      "macrolides",
+      "penicillins"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Otitis media",
+    "slug": "otitis-media",
+    "classSlugs": [
+      "macrolides",
+      "penicillins-broad-spectrum"
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Overactive bladder",
+    "slug": "overactive-bladder",
+    "classSlugs": [
+      "antimuscarinics-genitourinary"
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Paget's disease",
+    "slug": "pagets-disease",
+    "classSlugs": [
+      "bisphosphonates"
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Pain",
+    "slug": "pain",
+    "classSlugs": [
+      "lidocaine",
+      "aspirin",
+      "nsaids",
+      "opioids-strong",
+      "opioids-weak-moderate",
+      "paracetamol"
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Panic disorder",
+    "slug": "panic-disorder",
+    "classSlugs": [
+      "ssris"
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Paracentesis",
+    "slug": "paracentesis",
+    "classSlugs": []
+  },
+  {
+    "id": 122,
+    "name": "Paracetamol poisoning",
+    "slug": "paracetamol-poisoning",
+    "classSlugs": [
+      "acetylcysteine"
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Parkinson's disease",
+    "slug": "parkinsons-disease",
+    "classSlugs": [
+      "acetylcholinesterase-inhibitors",
+      "dopaminergic-drugs-parkinsons"
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Pelvic inflammatory disease",
+    "slug": "pelvic-inflammatory-disease",
+    "classSlugs": [
+      "cephalosporins-and-carbapenems",
+      "metronidazole",
+      "quinolones",
+      "tetracyclines"
+    ]
+  },
+  {
+    "id": 125,
+    "name": "People unable to meet their water and electrolyte requirements",
+    "slug": "people-unable-to-meet-their-water-and-electrolyte-requirements",
+    "classSlugs": []
+  },
+  {
+    "id": 126,
+    "name": "Peptic ulcer disease",
+    "slug": "peptic-ulcer-disease",
+    "classSlugs": [
+      "h2-receptor-antagonists",
+      "metronidazole",
+      "macrolides",
+      "penicillins-broad-spectrum",
+      "proton-pump-inhibitors"
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Peri-operative glycaemic control",
+    "slug": "peri-operative-glycaemic-control",
+    "classSlugs": [
+      "insulin"
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Peripheral vascular disease",
+    "slug": "peripheral-vascular-disease",
+    "classSlugs": [
+      "antiplatelet-adp-receptor-antagonists",
+      "aspirin",
+      "statins"
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Pneumocystis pneumonia",
+    "slug": "pneumocystis-pneumonia",
+    "classSlugs": [
+      "trimethoprim"
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Pneumonia",
+    "slug": "pneumonia",
+    "classSlugs": [
+      "cephalosporins-and-carbapenems",
+      "macrolides",
+      "metronidazole",
+      "penicillins-antipseudomonal",
+      "penicillins-broad-spectrum",
+      "penicillins",
+      "quinolones",
+      "tetracyclines"
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Pneumothorax",
+    "slug": "pneumothorax",
+    "classSlugs": [
+      "oxygen"
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Post-exposure prophylaxis",
+    "slug": "post-exposure-prophylaxis",
+    "classSlugs": [
+      "antiviral-drugs"
+    ]
+  },
+  {
+    "id": 133,
+    "name": "Post-partum haemorrhage",
+    "slug": "post-partum-haemorrhage",
+    "classSlugs": []
+  },
+  {
+    "id": 134,
+    "name": "Potassium depletion",
+    "slug": "potassium-depletion",
+    "classSlugs": []
+  },
+  {
+    "id": 135,
+    "name": "Pre-exposure prophylaxis",
+    "slug": "pre-exposure-prophylaxis",
+    "classSlugs": [
+      "antiviral-drugs"
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Prevention of neural tube defects",
+    "slug": "prevention-of-neural-tube-defects",
+    "classSlugs": [
+      "vitamins"
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Prevention of Rh0(d) sensitisation",
+    "slug": "prevention-of-rho-d-sensitisation",
+    "classSlugs": []
+  },
+  {
+    "id": 138,
+    "name": "Primary hyperaldosteronism",
+    "slug": "primary-hyperaldosteronism",
+    "classSlugs": [
+      "aldosterone-antagonists"
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Primary prevention of major adverse cardiovascular events",
+    "slug": "primary-prevention-of-major-adverse-cardiovascular-events",
+    "classSlugs": [
+      "statins"
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Prostate cancer",
+    "slug": "prostate-cancer",
+    "classSlugs": [
+      "sex-hormone-antagonists-breast-cancer"
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Prostatitis",
+    "slug": "prostatitis",
+    "classSlugs": [
+      "aminoglycosides",
+      "cephalosporins-and-carbapenems",
+      "quinolones",
+      "trimethoprim"
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Protozoal infections",
+    "slug": "protozoal-infections",
+    "classSlugs": [
+      "metronidazole"
+    ]
+  },
+  {
+    "id": 143,
+    "name": "Pruritus",
+    "slug": "pruritus",
+    "classSlugs": [
+      "antihistamines",
+      "emollients"
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Psoriasis",
+    "slug": "psoriasis",
+    "classSlugs": [
+      "corticosteroids-topical",
+      "emollients",
+      "methotrexate"
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Psoriatic arthritis",
+    "slug": "psoriatic-arthritis",
+    "classSlugs": [
+      "corticosteroids-systemic",
+      "methotrexate"
+    ]
+  },
+  {
+    "id": 146,
+    "name": "Pulmonary embolism",
+    "slug": "pulmonary-embolism",
+    "classSlugs": [
+      "fibrinolytic-drugs",
+      "doacs",
+      "heparins-and-fondaparinux",
+      "warfarin"
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Pulmonary hypertension",
+    "slug": "pulmonary-hypertension",
+    "classSlugs": [
+      "pde5-inhibitors"
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Pyelonephritis",
+    "slug": "pyelonephritis",
+    "classSlugs": [
+      "aminoglycosides",
+      "cephalosporins-and-carbapenems",
+      "penicillins-broad-spectrum"
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Rapid tranquilisation",
+    "slug": "rapid-tranquilisation",
+    "classSlugs": [
+      "antipsychotics-first-generation",
+      "benzodiazepines"
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Reconstitution and dilution of drugs",
+    "slug": "reconstitution-and-dilution-of-drugs",
+    "classSlugs": []
+  },
+  {
+    "id": 151,
+    "name": "Reduced gut motility",
+    "slug": "reduced-gut-motility",
+    "classSlugs": [
+      "antiemetics-dopamine-d2-antagonists"
+    ]
+  },
+  {
+    "id": 152,
+    "name": "Renal stones",
+    "slug": "renal-stones",
+    "classSlugs": [
+      "allopurinol"
+    ]
+  },
+  {
+    "id": 153,
+    "name": "Respiratory secretions",
+    "slug": "respiratory-secretions",
+    "classSlugs": [
+      "acetylcysteine",
+      "antimuscarinics-cardiovascular-and-gastrointestinal",
+      "antimuscarinics-bronchodilators"
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Respiratory tract infection",
+    "slug": "respiratory-tract-infection",
+    "classSlugs": [
+      "cephalosporins-and-carbapenems",
+      "macrolides",
+      "penicillins-antipseudomonal",
+      "penicillins-broad-spectrum",
+      "quinolones",
+      "tetracyclines"
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Reversal of warfarin anticoagulation",
+    "slug": "reversal-of-warfarin-anticoagulation",
+    "classSlugs": [
+      "vitamins"
+    ]
+  },
+  {
+    "id": 156,
+    "name": "Rheumatoid arthritis",
+    "slug": "rheumatoid-arthritis",
+    "classSlugs": [
+      "aminosalicylates",
+      "corticosteroids-systemic",
+      "methotrexate",
+      "nsaids"
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Schizophrenia",
+    "slug": "schizophrenia",
+    "classSlugs": [
+      "antipsychotics-first-generation",
+      "antipsychotics-second-generation"
+    ]
+  },
+  {
+    "id": 158,
+    "name": "Seasonal allergic rhinitis",
+    "slug": "seasonal-allergic-rhinitis",
+    "classSlugs": [
+      "antihistamines",
+      "leukotriene-receptor-antagonists"
+    ]
+  },
+  {
+    "id": 159,
+    "name": "Secondary parkinsonism",
+    "slug": "secondary-parkinsonism",
+    "classSlugs": [
+      "dopaminergic-drugs-parkinsons"
+    ]
+  },
+  {
+    "id": 160,
+    "name": "Secondary prevention of major adverse cardiovascular events",
+    "slug": "secondary-prevention-of-major-adverse-cardiovascular-events",
+    "classSlugs": [
+      "angiotensin-receptor-blockers",
+      "ace-inhibitors",
+      "antiplatelet-adp-receptor-antagonists",
+      "aspirin",
+      "statins"
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Sedation",
+    "slug": "sedation",
+    "classSlugs": [
+      "benzodiazepines"
+    ]
+  },
+  {
+    "id": 162,
+    "name": "Sepsis",
+    "slug": "sepsis",
+    "classSlugs": [
+      "aminoglycosides",
+      "cephalosporins-and-carbapenems",
+      "metronidazole",
+      "penicillins-antipseudomonal",
+      "penicillins-broad-spectrum",
+      "penicillins"
+    ]
+  },
+  {
+    "id": 163,
+    "name": "Shock",
+    "slug": "shock",
+    "classSlugs": []
+  },
+  {
+    "id": 164,
+    "name": "Sickle cell disease",
+    "slug": "sickle-cell-disease",
+    "classSlugs": []
+  },
+  {
+    "id": 165,
+    "name": "Sinusitis",
+    "slug": "sinusitis",
+    "classSlugs": [
+      "macrolides",
+      "penicillins-broad-spectrum",
+      "penicillins",
+      "tetracyclines"
+    ]
+  },
+  {
+    "id": 166,
+    "name": "Sjögren's syndrome",
+    "slug": "sjogrens-syndrome",
+    "classSlugs": [
+      "ocular-lubricants"
+    ]
+  },
+  {
+    "id": 167,
+    "name": "Skin and soft tissue infection",
+    "slug": "skin-and-soft-tissue-infection",
+    "classSlugs": [
+      "antifungal-drugs",
+      "vancomycin",
+      "macrolides",
+      "metronidazole",
+      "penicillins-antipseudomonal",
+      "penicillins-broad-spectrum",
+      "penicillins",
+      "tetracyclines"
+    ]
+  },
+  {
+    "id": 168,
+    "name": "Status epilepticus",
+    "slug": "status-epilepticus",
+    "classSlugs": [
+      "benzodiazepines",
+      "levetiracetam",
+      "valproate"
+    ]
+  },
+  {
+    "id": 169,
+    "name": "Stroke/cerebrovascular disease",
+    "slug": "stroke-cerebrovascular-disease",
+    "classSlugs": [
+      "fibrinolytic-drugs",
+      "angiotensin-receptor-blockers",
+      "ace-inhibitors",
+      "antiplatelet-adp-receptor-antagonists",
+      "aspirin",
+      "statins"
+    ]
+  },
+  {
+    "id": 170,
+    "name": "Subacute combined degeneration of the cord",
+    "slug": "subacute-combined-degeneration-of-the-cord",
+    "classSlugs": [
+      "vitamins"
+    ]
+  },
+  {
+    "id": 171,
+    "name": "Supraventricular tachycardia",
+    "slug": "supraventricular-tachycardia",
+    "classSlugs": [
+      "adenosine",
+      "amiodarone",
+      "beta-blockers",
+      "calcium-channel-blockers"
+    ]
+  },
+  {
+    "id": 172,
+    "name": "Tonsillitis",
+    "slug": "tonsillitis",
+    "classSlugs": [
+      "penicillins"
+    ]
+  },
+  {
+    "id": 173,
+    "name": "Trauma",
+    "slug": "trauma",
+    "classSlugs": [
+      "opioids-strong",
+      "opioids-weak-moderate",
+      "nsaids",
+      "paracetamol"
+    ]
+  },
+  {
+    "id": 174,
+    "name": "Trigeminal neuralgia",
+    "slug": "trigeminal-neuralgia",
+    "classSlugs": [
+      "carbamazepine"
+    ]
+  },
+  {
+    "id": 175,
+    "name": "Tumour lysis syndrome",
+    "slug": "tumour-lysis-syndrome",
+    "classSlugs": [
+      "allopurinol"
+    ]
+  },
+  {
+    "id": 176,
+    "name": "Type 1 diabetes",
+    "slug": "type-1-diabetes",
+    "classSlugs": [
+      "insulin"
+    ]
+  },
+  {
+    "id": 177,
+    "name": "Type 2 diabetes",
+    "slug": "type-2-diabetes",
+    "classSlugs": [
+      "dpp4-inhibitors",
+      "insulin",
+      "metformin",
+      "sulphonylureas"
+    ]
+  },
+  {
+    "id": 178,
+    "name": "Typhoid",
+    "slug": "typhoid",
+    "classSlugs": [
+      "tetracyclines"
+    ]
+  },
+  {
+    "id": 179,
+    "name": "Ulcerative colitis",
+    "slug": "ulcerative-colitis",
+    "classSlugs": [
+      "aminosalicylates",
+      "corticosteroids-systemic"
+    ]
+  },
+  {
+    "id": 180,
+    "name": "Urinary tract infection",
+    "slug": "urinary-tract-infection",
+    "classSlugs": [
+      "aminoglycosides",
+      "cephalosporins-and-carbapenems",
+      "nitrofurantoin",
+      "penicillins-antipseudomonal",
+      "penicillins-broad-spectrum",
+      "quinolones",
+      "trimethoprim"
+    ]
+  },
+  {
+    "id": 181,
+    "name": "Urticaria",
+    "slug": "urticaria",
+    "classSlugs": [
+      "antihistamines"
+    ]
+  },
+  {
+    "id": 182,
+    "name": "Venous thromboembolism",
+    "slug": "venous-thromboembolism",
+    "classSlugs": [
+      "doacs",
+      "heparins-and-fondaparinux",
+      "warfarin"
+    ]
+  },
+  {
+    "id": 183,
+    "name": "Ventricular fibrillation",
+    "slug": "ventricular-fibrillation",
+    "classSlugs": [
+      "amiodarone"
+    ]
+  },
+  {
+    "id": 184,
+    "name": "Ventricular tachycardia",
+    "slug": "ventricular-tachycardia",
+    "classSlugs": [
+      "amiodarone",
+      "lidocaine"
+    ]
+  },
+  {
+    "id": 185,
+    "name": "Vertigo",
+    "slug": "vertigo",
+    "classSlugs": [
+      "antiemetics-histamine-h1-antagonists"
+    ]
+  },
+  {
+    "id": 186,
+    "name": "Viral infection",
+    "slug": "viral-infection",
+    "classSlugs": [
+      "antiviral-drugs"
+    ]
+  },
+  {
+    "id": 187,
+    "name": "Vitamin D deficiency",
+    "slug": "vitamin-d-deficiency",
+    "classSlugs": [
+      "calcium-and-vitamin-d"
+    ]
+  },
+  {
+    "id": 188,
+    "name": "Vitamin deficiency",
+    "slug": "vitamin-deficiency",
+    "classSlugs": [
+      "vitamins"
+    ]
+  },
+  {
+    "id": 189,
+    "name": "Wernicke's encephalopathy and Korsakoff's psychosis",
+    "slug": "wernickes-encephalopathy-and-korsakoffs-psychosis",
+    "classSlugs": [
+      "vitamins"
+    ]
+  }
+]
