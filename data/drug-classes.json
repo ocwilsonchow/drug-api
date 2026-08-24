@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "name": "5α-reductase inhibitors",
+    "slug": "5-alpha-reductase-inhibitors"
+  },
+  {
+    "id": 2,
+    "name": "α-blockers",
+    "slug": "alpha-blockers"
+  },
+  {
+    "id": 3,
+    "name": "Acetylcholinesterase inhibitors",
+    "slug": "acetylcholinesterase-inhibitors"
+  },
+  {
+    "id": 4,
+    "name": "Acetylcysteine (N-acetylcysteine)",
+    "slug": "acetylcysteine"
+  },
+  {
+    "id": 5,
+    "name": "Activated charcoal",
+    "slug": "activated-charcoal"
+  },
+  {
+    "id": 6,
+    "name": "Adenosine",
+    "slug": "adenosine"
+  },
+  {
+    "id": 7,
+    "name": "Adrenaline (epinephrine)",
+    "slug": "adrenaline"
+  },
+  {
+    "id": 8,
+    "name": "Aldosterone antagonists",
+    "slug": "aldosterone-antagonists"
+  },
+  {
+    "id": 9,
+    "name": "Alginates and antacids",
+    "slug": "alginates-and-antacids"
+  },
+  {
+    "id": 10,
+    "name": "Allopurinol",
+    "slug": "allopurinol"
+  },
+  {
+    "id": 11,
+    "name": "Aminoglycosides",
+    "slug": "aminoglycosides"
+  },
+  {
+    "id": 12,
+    "name": "Aminosalicylates",
+    "slug": "aminosalicylates"
+  },
+  {
+    "id": 13,
+    "name": "Amiodarone",
+    "slug": "amiodarone"
+  },
+  {
+    "id": 14,
+    "name": "Angiotensin-converting enzyme (ACE) inhibitors",
+    "slug": "ace-inhibitors"
+  },
+  {
+    "id": 15,
+    "name": "Angiotensin receptor blockers",
+    "slug": "angiotensin-receptor-blockers"
+  },
+  {
+    "id": 16,
+    "name": "Antidepressants, selective serotonin reuptake inhibitors",
+    "slug": "ssris"
+  },
+  {
+    "id": 17,
+    "name": "Antidepressants, tricyclics and related drugs",
+    "slug": "tricyclic-antidepressants"
+  },
+  {
+    "id": 18,
+    "name": "Antidepressants, venlafaxine and mirtazapine",
+    "slug": "venlafaxine-and-mirtazapine"
+  },
+  {
+    "id": 19,
+    "name": "Antiemetics, dopamine D2-receptor antagonists",
+    "slug": "antiemetics-dopamine-d2-antagonists"
+  },
+  {
+    "id": 20,
+    "name": "Antiemetics, histamine H1-receptor antagonists",
+    "slug": "antiemetics-histamine-h1-antagonists"
+  },
+  {
+    "id": 21,
+    "name": "Antiemetics, serotonin 5-HT3-receptor antagonists",
+    "slug": "antiemetics-5ht3-antagonists"
+  },
+  {
+    "id": 22,
+    "name": "Antifungal drugs",
+    "slug": "antifungal-drugs"
+  },
+  {
+    "id": 23,
+    "name": "Antihistamines (H1-receptor antagonists)",
+    "slug": "antihistamines"
+  },
+  {
+    "id": 24,
+    "name": "Antimotility drugs",
+    "slug": "antimotility-drugs"
+  },
+  {
+    "id": 25,
+    "name": "Antimuscarinics, bronchodilators",
+    "slug": "antimuscarinics-bronchodilators"
+  },
+  {
+    "id": 26,
+    "name": "Antimuscarinics, cardiovascular and gastrointestinal uses",
+    "slug": "antimuscarinics-cardiovascular-and-gastrointestinal"
+  },
+  {
+    "id": 27,
+    "name": "Antimuscarinics, genitourinary uses",
+    "slug": "antimuscarinics-genitourinary"
+  },
+  {
+    "id": 28,
+    "name": "Antipsychotics, first-generation (typical)",
+    "slug": "antipsychotics-first-generation"
+  },
+  {
+    "id": 29,
+    "name": "Antipsychotics, second-generation (atypical)",
+    "slug": "antipsychotics-second-generation"
+  },
+  {
+    "id": 30,
+    "name": "Antiviral drugs",
+    "slug": "antiviral-drugs"
+  },
+  {
+    "id": 31,
+    "name": "Antiplatelet drugs, ADP-receptor antagonists",
+    "slug": "antiplatelet-adp-receptor-antagonists"
+  },
+  {
+    "id": 32,
+    "name": "Antiplatelet drugs, aspirin",
+    "slug": "aspirin"
+  },
+  {
+    "id": 33,
+    "name": "Azathioprine",
+    "slug": "azathioprine"
+  },
+  {
+    "id": 34,
+    "name": "β-blockers",
+    "slug": "beta-blockers"
+  },
+  {
+    "id": 35,
+    "name": "β2-agonists",
+    "slug": "beta-2-agonists"
+  },
+  {
+    "id": 36,
+    "name": "Benzodiazepines",
+    "slug": "benzodiazepines"
+  },
+  {
+    "id": 37,
+    "name": "Bisphosphonates",
+    "slug": "bisphosphonates"
+  },
+  {
+    "id": 38,
+    "name": "Calcium and vitamin D",
+    "slug": "calcium-and-vitamin-d"
+  },
+  {
+    "id": 39,
+    "name": "Calcium channel blockers",
+    "slug": "calcium-channel-blockers"
+  },
+  {
+    "id": 40,
+    "name": "Carbamazepine",
+    "slug": "carbamazepine"
+  },
+  {
+    "id": 41,
+    "name": "Cephalosporins and carbapenems",
+    "slug": "cephalosporins-and-carbapenems"
+  },
+  {
+    "id": 42,
+    "name": "Chloramphenicol",
+    "slug": "chloramphenicol"
+  },
+  {
+    "id": 43,
+    "name": "Corticosteroids (glucocorticoids), inhaled",
+    "slug": "corticosteroids-inhaled"
+  },
+  {
+    "id": 44,
+    "name": "Corticosteroids (glucocorticoids), systemic",
+    "slug": "corticosteroids-systemic"
+  },
+  {
+    "id": 45,
+    "name": "Corticosteroids (glucocorticoids), topical",
+    "slug": "corticosteroids-topical"
+  },
+  {
+    "id": 46,
+    "name": "Digoxin",
+    "slug": "digoxin"
+  },
+  {
+    "id": 47,
+    "name": "Dipeptidylpeptidase-4 inhibitors",
+    "slug": "dpp4-inhibitors"
+  },
+  {
+    "id": 48,
+    "name": "Direct oral anticoagulants",
+    "slug": "doacs"
+  },
+  {
+    "id": 49,
+    "name": "Diuretics, loop",
+    "slug": "loop-diuretics"
+  },
+  {
+    "id": 50,
+    "name": "Diuretics, thiazide and thiazide-like",
+    "slug": "thiazide-diuretics"
+  },
+  {
+    "id": 51,
+    "name": "Dopaminergic drugs for Parkinson’s disease",
+    "slug": "dopaminergic-drugs-parkinsons"
+  },
+  {
+    "id": 52,
+    "name": "Emollients",
+    "slug": "emollients"
+  },
+  {
+    "id": 53,
+    "name": "Fibrinolytic drugs",
+    "slug": "fibrinolytic-drugs"
+  },
+  {
+    "id": 54,
+    "name": "Gabapentin and pregabalin",
+    "slug": "gabapentin-and-pregabalin"
+  },
+  {
+    "id": 55,
+    "name": "H2-receptor antagonists",
+    "slug": "h2-receptor-antagonists"
+  },
+  {
+    "id": 56,
+    "name": "Heparins and fondaparinux",
+    "slug": "heparins-and-fondaparinux"
+  },
+  {
+    "id": 57,
+    "name": "Insulin",
+    "slug": "insulin"
+  },
+  {
+    "id": 58,
+    "name": "Iron",
+    "slug": "iron"
+  },
+  {
+    "id": 59,
+    "name": "Lamotrigine",
+    "slug": "lamotrigine"
+  },
+  {
+    "id": 60,
+    "name": "Laxatives, osmotic",
+    "slug": "laxatives-osmotic"
+  },
+  {
+    "id": 61,
+    "name": "Laxatives, stimulant",
+    "slug": "laxatives-stimulant"
+  },
+  {
+    "id": 62,
+    "name": "Leukotriene receptor antagonists",
+    "slug": "leukotriene-receptor-antagonists"
+  },
+  {
+    "id": 63,
+    "name": "Levetiracetam",
+    "slug": "levetiracetam"
+  },
+  {
+    "id": 64,
+    "name": "Lidocaine",
+    "slug": "lidocaine"
+  },
+  {
+    "id": 65,
+    "name": "Macrolides",
+    "slug": "macrolides"
+  },
+  {
+    "id": 66,
+    "name": "Metformin",
+    "slug": "metformin"
+  },
+  {
+    "id": 67,
+    "name": "Methotrexate",
+    "slug": "methotrexate"
+  },
+  {
+    "id": 68,
+    "name": "Metronidazole",
+    "slug": "metronidazole"
+  },
+  {
+    "id": 69,
+    "name": "Naloxone",
+    "slug": "naloxone"
+  },
+  {
+    "id": 70,
+    "name": "Nicotine replacement and related drugs",
+    "slug": "nicotine-replacement"
+  },
+  {
+    "id": 71,
+    "name": "Nitrates",
+    "slug": "nitrates"
+  },
+  {
+    "id": 72,
+    "name": "Nitrofurantoin",
+    "slug": "nitrofurantoin"
+  },
+  {
+    "id": 73,
+    "name": "Non-steroidal antiinflammatory drugs",
+    "slug": "nsaids"
+  },
+  {
+    "id": 74,
+    "name": "Ocular lubricants (artificial tears)",
+    "slug": "ocular-lubricants"
+  },
+  {
+    "id": 75,
+    "name": "Oestrogens and progestogens",
+    "slug": "oestrogens-and-progestogens"
+  },
+  {
+    "id": 76,
+    "name": "Opioids, strong",
+    "slug": "opioids-strong"
+  },
+  {
+    "id": 77,
+    "name": "Opioids, weak/moderate",
+    "slug": "opioids-weak-moderate"
+  },
+  {
+    "id": 78,
+    "name": "Oxygen",
+    "slug": "oxygen"
+  },
+  {
+    "id": 79,
+    "name": "Paracetamol",
+    "slug": "paracetamol"
+  },
+  {
+    "id": 80,
+    "name": "Penicillins",
+    "slug": "penicillins"
+  },
+  {
+    "id": 81,
+    "name": "Penicillins, antipseudomonal",
+    "slug": "penicillins-antipseudomonal"
+  },
+  {
+    "id": 82,
+    "name": "Penicillins, broad-spectrum",
+    "slug": "penicillins-broad-spectrum"
+  },
+  {
+    "id": 83,
+    "name": "Penicillins, penicillinase-resistant",
+    "slug": "penicillins-penicillinase-resistant"
+  },
+  {
+    "id": 84,
+    "name": "Phosphodiesterase (type 5) inhibitors",
+    "slug": "pde5-inhibitors"
+  },
+  {
+    "id": 85,
+    "name": "Prostaglandin analogue eye drops",
+    "slug": "prostaglandin-analogue-eye-drops"
+  },
+  {
+    "id": 86,
+    "name": "Proton pump inhibitors",
+    "slug": "proton-pump-inhibitors"
+  },
+  {
+    "id": 87,
+    "name": "Quinine",
+    "slug": "quinine"
+  },
+  {
+    "id": 88,
+    "name": "Quinolones",
+    "slug": "quinolones"
+  },
+  {
+    "id": 89,
+    "name": "Serotonin 5-HT1-receptor agonists",
+    "slug": "serotonin-5ht1-agonists"
+  },
+  {
+    "id": 90,
+    "name": "Sex hormone antagonists for breast cancer",
+    "slug": "sex-hormone-antagonists-breast-cancer"
+  },
+  {
+    "id": 91,
+    "name": "Statins",
+    "slug": "statins"
+  },
+  {
+    "id": 92,
+    "name": "Sulphonylureas",
+    "slug": "sulphonylureas"
+  },
+  {
+    "id": 93,
+    "name": "Tetracyclines",
+    "slug": "tetracyclines"
+  },
+  {
+    "id": 94,
+    "name": "Thyroid hormones",
+    "slug": "thyroid-hormones"
+  },
+  {
+    "id": 95,
+    "name": "Trimethoprim",
+    "slug": "trimethoprim"
+  },
+  {
+    "id": 96,
+    "name": "Valproate (valproic acid)",
+    "slug": "valproate"
+  },
+  {
+    "id": 97,
+    "name": "Vancomycin",
+    "slug": "vancomycin"
+  },
+  {
+    "id": 98,
+    "name": "Vitamins",
+    "slug": "vitamins"
+  },
+  {
+    "id": 99,
+    "name": "Warfarin",
+    "slug": "warfarin"
+  },
+  {
+    "id": 100,
+    "name": "Z-drugs",
+    "slug": "z-drugs"
+  }
+]

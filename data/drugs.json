@@ -1,0 +1,1742 @@
+[
+  {
+    "id": 1,
+    "name": "Finasteride",
+    "slug": "finasteride",
+    "classSlug": "5-alpha-reductase-inhibitors"
+  },
+  {
+    "id": 2,
+    "name": "Dutasteride",
+    "slug": "dutasteride",
+    "classSlug": "5-alpha-reductase-inhibitors"
+  },
+  {
+    "id": 3,
+    "name": "Doxazosin",
+    "slug": "doxazosin",
+    "classSlug": "alpha-blockers"
+  },
+  {
+    "id": 4,
+    "name": "Tamsulosin",
+    "slug": "tamsulosin",
+    "classSlug": "alpha-blockers"
+  },
+  {
+    "id": 5,
+    "name": "Alfuzosin",
+    "slug": "alfuzosin",
+    "classSlug": "alpha-blockers"
+  },
+  {
+    "id": 6,
+    "name": "Prazosin",
+    "slug": "prazosin",
+    "classSlug": "alpha-blockers"
+  },
+  {
+    "id": 7,
+    "name": "Donepezil",
+    "slug": "donepezil",
+    "classSlug": "acetylcholinesterase-inhibitors"
+  },
+  {
+    "id": 8,
+    "name": "Rivastigmine",
+    "slug": "rivastigmine",
+    "classSlug": "acetylcholinesterase-inhibitors"
+  },
+  {
+    "id": 9,
+    "name": "Galantamine",
+    "slug": "galantamine",
+    "classSlug": "acetylcholinesterase-inhibitors"
+  },
+  {
+    "id": 10,
+    "name": "Acetylcysteine",
+    "slug": "acetylcysteine",
+    "classSlug": "acetylcysteine"
+  },
+  {
+    "id": 11,
+    "name": "Activated charcoal",
+    "slug": "activated-charcoal",
+    "classSlug": "activated-charcoal"
+  },
+  {
+    "id": 12,
+    "name": "Adenosine",
+    "slug": "adenosine",
+    "classSlug": "adenosine"
+  },
+  {
+    "id": 13,
+    "name": "Adrenaline",
+    "slug": "adrenaline",
+    "classSlug": "adrenaline"
+  },
+  {
+    "id": 14,
+    "name": "Spironolactone",
+    "slug": "spironolactone",
+    "classSlug": "aldosterone-antagonists"
+  },
+  {
+    "id": 15,
+    "name": "Eplerenone",
+    "slug": "eplerenone",
+    "classSlug": "aldosterone-antagonists"
+  },
+  {
+    "id": 16,
+    "name": "Alginate",
+    "slug": "alginate",
+    "classSlug": "alginates-and-antacids"
+  },
+  {
+    "id": 17,
+    "name": "Magnesium carbonate",
+    "slug": "magnesium-carbonate",
+    "classSlug": "alginates-and-antacids"
+  },
+  {
+    "id": 18,
+    "name": "Calcium carbonate",
+    "slug": "calcium-carbonate",
+    "classSlug": "alginates-and-antacids"
+  },
+  {
+    "id": 19,
+    "name": "Aluminium hydroxide",
+    "slug": "aluminium-hydroxide",
+    "classSlug": "alginates-and-antacids"
+  },
+  {
+    "id": 20,
+    "name": "Allopurinol",
+    "slug": "allopurinol",
+    "classSlug": "allopurinol"
+  },
+  {
+    "id": 21,
+    "name": "Gentamicin",
+    "slug": "gentamicin",
+    "classSlug": "aminoglycosides"
+  },
+  {
+    "id": 22,
+    "name": "Tobramycin",
+    "slug": "tobramycin",
+    "classSlug": "aminoglycosides"
+  },
+  {
+    "id": 23,
+    "name": "Amikacin",
+    "slug": "amikacin",
+    "classSlug": "aminoglycosides"
+  },
+  {
+    "id": 24,
+    "name": "Mesalazine",
+    "slug": "mesalazine",
+    "classSlug": "aminosalicylates"
+  },
+  {
+    "id": 25,
+    "name": "Sulfasalazine",
+    "slug": "sulfasalazine",
+    "classSlug": "aminosalicylates"
+  },
+  {
+    "id": 26,
+    "name": "Balsalazide",
+    "slug": "balsalazide",
+    "classSlug": "aminosalicylates"
+  },
+  {
+    "id": 27,
+    "name": "Olsalazine",
+    "slug": "olsalazine",
+    "classSlug": "aminosalicylates"
+  },
+  {
+    "id": 28,
+    "name": "Amiodarone",
+    "slug": "amiodarone",
+    "classSlug": "amiodarone"
+  },
+  {
+    "id": 29,
+    "name": "Ramipril",
+    "slug": "ramipril",
+    "classSlug": "ace-inhibitors"
+  },
+  {
+    "id": 30,
+    "name": "Lisinopril",
+    "slug": "lisinopril",
+    "classSlug": "ace-inhibitors"
+  },
+  {
+    "id": 31,
+    "name": "Perindopril",
+    "slug": "perindopril",
+    "classSlug": "ace-inhibitors"
+  },
+  {
+    "id": 32,
+    "name": "Enalapril",
+    "slug": "enalapril",
+    "classSlug": "ace-inhibitors"
+  },
+  {
+    "id": 33,
+    "name": "Captopril",
+    "slug": "captopril",
+    "classSlug": "ace-inhibitors"
+  },
+  {
+    "id": 34,
+    "name": "Losartan",
+    "slug": "losartan",
+    "classSlug": "angiotensin-receptor-blockers"
+  },
+  {
+    "id": 35,
+    "name": "Candesartan",
+    "slug": "candesartan",
+    "classSlug": "angiotensin-receptor-blockers"
+  },
+  {
+    "id": 36,
+    "name": "Irbesartan",
+    "slug": "irbesartan",
+    "classSlug": "angiotensin-receptor-blockers"
+  },
+  {
+    "id": 37,
+    "name": "Valsartan",
+    "slug": "valsartan",
+    "classSlug": "angiotensin-receptor-blockers"
+  },
+  {
+    "id": 38,
+    "name": "Olmesartan",
+    "slug": "olmesartan",
+    "classSlug": "angiotensin-receptor-blockers"
+  },
+  {
+    "id": 39,
+    "name": "Sertraline",
+    "slug": "sertraline",
+    "classSlug": "ssris"
+  },
+  {
+    "id": 40,
+    "name": "Citalopram",
+    "slug": "citalopram",
+    "classSlug": "ssris"
+  },
+  {
+    "id": 41,
+    "name": "Fluoxetine",
+    "slug": "fluoxetine",
+    "classSlug": "ssris"
+  },
+  {
+    "id": 42,
+    "name": "Escitalopram",
+    "slug": "escitalopram",
+    "classSlug": "ssris"
+  },
+  {
+    "id": 43,
+    "name": "Paroxetine",
+    "slug": "paroxetine",
+    "classSlug": "ssris"
+  },
+  {
+    "id": 44,
+    "name": "Amitriptyline",
+    "slug": "amitriptyline",
+    "classSlug": "tricyclic-antidepressants"
+  },
+  {
+    "id": 45,
+    "name": "Lofepramine",
+    "slug": "lofepramine",
+    "classSlug": "tricyclic-antidepressants"
+  },
+  {
+    "id": 46,
+    "name": "Nortriptyline",
+    "slug": "nortriptyline",
+    "classSlug": "tricyclic-antidepressants"
+  },
+  {
+    "id": 47,
+    "name": "Clomipramine",
+    "slug": "clomipramine",
+    "classSlug": "tricyclic-antidepressants"
+  },
+  {
+    "id": 48,
+    "name": "Dosulepin",
+    "slug": "dosulepin",
+    "classSlug": "tricyclic-antidepressants"
+  },
+  {
+    "id": 49,
+    "name": "Venlafaxine",
+    "slug": "venlafaxine",
+    "classSlug": "venlafaxine-and-mirtazapine"
+  },
+  {
+    "id": 50,
+    "name": "Mirtazapine",
+    "slug": "mirtazapine",
+    "classSlug": "venlafaxine-and-mirtazapine"
+  },
+  {
+    "id": 51,
+    "name": "Metoclopramide",
+    "slug": "metoclopramide",
+    "classSlug": "antiemetics-dopamine-d2-antagonists"
+  },
+  {
+    "id": 52,
+    "name": "Domperidone",
+    "slug": "domperidone",
+    "classSlug": "antiemetics-dopamine-d2-antagonists"
+  },
+  {
+    "id": 53,
+    "name": "Prochlorperazine",
+    "slug": "prochlorperazine",
+    "classSlug": "antiemetics-dopamine-d2-antagonists"
+  },
+  {
+    "id": 54,
+    "name": "Cyclizine",
+    "slug": "cyclizine",
+    "classSlug": "antiemetics-histamine-h1-antagonists"
+  },
+  {
+    "id": 55,
+    "name": "Cinnarizine",
+    "slug": "cinnarizine",
+    "classSlug": "antiemetics-histamine-h1-antagonists"
+  },
+  {
+    "id": 56,
+    "name": "Promethazine",
+    "slug": "promethazine",
+    "classSlug": "antiemetics-histamine-h1-antagonists"
+  },
+  {
+    "id": 57,
+    "name": "Ondansetron",
+    "slug": "ondansetron",
+    "classSlug": "antiemetics-5ht3-antagonists"
+  },
+  {
+    "id": 58,
+    "name": "Granisetron",
+    "slug": "granisetron",
+    "classSlug": "antiemetics-5ht3-antagonists"
+  },
+  {
+    "id": 59,
+    "name": "Fluconazole",
+    "slug": "fluconazole",
+    "classSlug": "antifungal-drugs"
+  },
+  {
+    "id": 60,
+    "name": "Clotrimazole",
+    "slug": "clotrimazole",
+    "classSlug": "antifungal-drugs"
+  },
+  {
+    "id": 61,
+    "name": "Nystatin",
+    "slug": "nystatin",
+    "classSlug": "antifungal-drugs"
+  },
+  {
+    "id": 62,
+    "name": "Terbinafine",
+    "slug": "terbinafine",
+    "classSlug": "antifungal-drugs"
+  },
+  {
+    "id": 63,
+    "name": "Ketoconazole",
+    "slug": "ketoconazole",
+    "classSlug": "antifungal-drugs"
+  },
+  {
+    "id": 64,
+    "name": "Itraconazole",
+    "slug": "itraconazole",
+    "classSlug": "antifungal-drugs"
+  },
+  {
+    "id": 65,
+    "name": "Miconazole",
+    "slug": "miconazole",
+    "classSlug": "antifungal-drugs"
+  },
+  {
+    "id": 66,
+    "name": "Cetirizine",
+    "slug": "cetirizine",
+    "classSlug": "antihistamines"
+  },
+  {
+    "id": 67,
+    "name": "Loratadine",
+    "slug": "loratadine",
+    "classSlug": "antihistamines"
+  },
+  {
+    "id": 68,
+    "name": "Chlorphenamine",
+    "slug": "chlorphenamine",
+    "classSlug": "antihistamines"
+  },
+  {
+    "id": 69,
+    "name": "Fexofenadine",
+    "slug": "fexofenadine",
+    "classSlug": "antihistamines"
+  },
+  {
+    "id": 70,
+    "name": "Loperamide",
+    "slug": "loperamide",
+    "classSlug": "antimotility-drugs"
+  },
+  {
+    "id": 71,
+    "name": "Ipratropium",
+    "slug": "ipratropium",
+    "classSlug": "antimuscarinics-bronchodilators"
+  },
+  {
+    "id": 72,
+    "name": "Tiotropium",
+    "slug": "tiotropium",
+    "classSlug": "antimuscarinics-bronchodilators"
+  },
+  {
+    "id": 73,
+    "name": "Aclidinium",
+    "slug": "aclidinium",
+    "classSlug": "antimuscarinics-bronchodilators"
+  },
+  {
+    "id": 74,
+    "name": "Glycopyrronium (inhaled)",
+    "slug": "glycopyrronium-inhaled",
+    "classSlug": "antimuscarinics-bronchodilators"
+  },
+  {
+    "id": 75,
+    "name": "Atropine",
+    "slug": "atropine",
+    "classSlug": "antimuscarinics-cardiovascular-and-gastrointestinal"
+  },
+  {
+    "id": 76,
+    "name": "Hyoscine butylbromide",
+    "slug": "hyoscine-butylbromide",
+    "classSlug": "antimuscarinics-cardiovascular-and-gastrointestinal"
+  },
+  {
+    "id": 77,
+    "name": "Hyoscine hydrobromide",
+    "slug": "hyoscine-hydrobromide",
+    "classSlug": "antimuscarinics-cardiovascular-and-gastrointestinal"
+  },
+  {
+    "id": 78,
+    "name": "Glycopyrronium",
+    "slug": "glycopyrronium",
+    "classSlug": "antimuscarinics-cardiovascular-and-gastrointestinal"
+  },
+  {
+    "id": 79,
+    "name": "Oxybutynin",
+    "slug": "oxybutynin",
+    "classSlug": "antimuscarinics-genitourinary"
+  },
+  {
+    "id": 80,
+    "name": "Solifenacin",
+    "slug": "solifenacin",
+    "classSlug": "antimuscarinics-genitourinary"
+  },
+  {
+    "id": 81,
+    "name": "Tolterodine",
+    "slug": "tolterodine",
+    "classSlug": "antimuscarinics-genitourinary"
+  },
+  {
+    "id": 82,
+    "name": "Trospium",
+    "slug": "trospium",
+    "classSlug": "antimuscarinics-genitourinary"
+  },
+  {
+    "id": 83,
+    "name": "Darifenacin",
+    "slug": "darifenacin",
+    "classSlug": "antimuscarinics-genitourinary"
+  },
+  {
+    "id": 84,
+    "name": "Haloperidol",
+    "slug": "haloperidol",
+    "classSlug": "antipsychotics-first-generation"
+  },
+  {
+    "id": 85,
+    "name": "Chlorpromazine",
+    "slug": "chlorpromazine",
+    "classSlug": "antipsychotics-first-generation"
+  },
+  {
+    "id": 86,
+    "name": "Flupentixol",
+    "slug": "flupentixol",
+    "classSlug": "antipsychotics-first-generation"
+  },
+  {
+    "id": 87,
+    "name": "Zuclopenthixol",
+    "slug": "zuclopenthixol",
+    "classSlug": "antipsychotics-first-generation"
+  },
+  {
+    "id": 88,
+    "name": "Olanzapine",
+    "slug": "olanzapine",
+    "classSlug": "antipsychotics-second-generation"
+  },
+  {
+    "id": 89,
+    "name": "Quetiapine",
+    "slug": "quetiapine",
+    "classSlug": "antipsychotics-second-generation"
+  },
+  {
+    "id": 90,
+    "name": "Risperidone",
+    "slug": "risperidone",
+    "classSlug": "antipsychotics-second-generation"
+  },
+  {
+    "id": 91,
+    "name": "Aripiprazole",
+    "slug": "aripiprazole",
+    "classSlug": "antipsychotics-second-generation"
+  },
+  {
+    "id": 92,
+    "name": "Clozapine",
+    "slug": "clozapine",
+    "classSlug": "antipsychotics-second-generation"
+  },
+  {
+    "id": 93,
+    "name": "Aciclovir",
+    "slug": "aciclovir",
+    "classSlug": "antiviral-drugs"
+  },
+  {
+    "id": 94,
+    "name": "Valaciclovir",
+    "slug": "valaciclovir",
+    "classSlug": "antiviral-drugs"
+  },
+  {
+    "id": 95,
+    "name": "Oseltamivir",
+    "slug": "oseltamivir",
+    "classSlug": "antiviral-drugs"
+  },
+  {
+    "id": 96,
+    "name": "Clopidogrel",
+    "slug": "clopidogrel",
+    "classSlug": "antiplatelet-adp-receptor-antagonists"
+  },
+  {
+    "id": 97,
+    "name": "Ticagrelor",
+    "slug": "ticagrelor",
+    "classSlug": "antiplatelet-adp-receptor-antagonists"
+  },
+  {
+    "id": 98,
+    "name": "Prasugrel",
+    "slug": "prasugrel",
+    "classSlug": "antiplatelet-adp-receptor-antagonists"
+  },
+  {
+    "id": 99,
+    "name": "Aspirin",
+    "slug": "aspirin",
+    "classSlug": "aspirin"
+  },
+  {
+    "id": 100,
+    "name": "Azathioprine",
+    "slug": "azathioprine",
+    "classSlug": "azathioprine"
+  },
+  {
+    "id": 101,
+    "name": "Bisoprolol",
+    "slug": "bisoprolol",
+    "classSlug": "beta-blockers"
+  },
+  {
+    "id": 102,
+    "name": "Atenolol",
+    "slug": "atenolol",
+    "classSlug": "beta-blockers"
+  },
+  {
+    "id": 103,
+    "name": "Propranolol",
+    "slug": "propranolol",
+    "classSlug": "beta-blockers"
+  },
+  {
+    "id": 104,
+    "name": "Carvedilol",
+    "slug": "carvedilol",
+    "classSlug": "beta-blockers"
+  },
+  {
+    "id": 105,
+    "name": "Metoprolol",
+    "slug": "metoprolol",
+    "classSlug": "beta-blockers"
+  },
+  {
+    "id": 106,
+    "name": "Labetalol",
+    "slug": "labetalol",
+    "classSlug": "beta-blockers"
+  },
+  {
+    "id": 107,
+    "name": "Nebivolol",
+    "slug": "nebivolol",
+    "classSlug": "beta-blockers"
+  },
+  {
+    "id": 108,
+    "name": "Sotalol",
+    "slug": "sotalol",
+    "classSlug": "beta-blockers"
+  },
+  {
+    "id": 109,
+    "name": "Salbutamol",
+    "slug": "salbutamol",
+    "classSlug": "beta-2-agonists"
+  },
+  {
+    "id": 110,
+    "name": "Salmeterol",
+    "slug": "salmeterol",
+    "classSlug": "beta-2-agonists"
+  },
+  {
+    "id": 111,
+    "name": "Formoterol",
+    "slug": "formoterol",
+    "classSlug": "beta-2-agonists"
+  },
+  {
+    "id": 112,
+    "name": "Terbutaline",
+    "slug": "terbutaline",
+    "classSlug": "beta-2-agonists"
+  },
+  {
+    "id": 113,
+    "name": "Diazepam",
+    "slug": "diazepam",
+    "classSlug": "benzodiazepines"
+  },
+  {
+    "id": 114,
+    "name": "Lorazepam",
+    "slug": "lorazepam",
+    "classSlug": "benzodiazepines"
+  },
+  {
+    "id": 115,
+    "name": "Midazolam",
+    "slug": "midazolam",
+    "classSlug": "benzodiazepines"
+  },
+  {
+    "id": 116,
+    "name": "Temazepam",
+    "slug": "temazepam",
+    "classSlug": "benzodiazepines"
+  },
+  {
+    "id": 117,
+    "name": "Chlordiazepoxide",
+    "slug": "chlordiazepoxide",
+    "classSlug": "benzodiazepines"
+  },
+  {
+    "id": 118,
+    "name": "Clonazepam",
+    "slug": "clonazepam",
+    "classSlug": "benzodiazepines"
+  },
+  {
+    "id": 119,
+    "name": "Alendronic acid",
+    "slug": "alendronic-acid",
+    "classSlug": "bisphosphonates"
+  },
+  {
+    "id": 120,
+    "name": "Risedronate",
+    "slug": "risedronate",
+    "classSlug": "bisphosphonates"
+  },
+  {
+    "id": 121,
+    "name": "Zoledronic acid",
+    "slug": "zoledronic-acid",
+    "classSlug": "bisphosphonates"
+  },
+  {
+    "id": 122,
+    "name": "Ibandronic acid",
+    "slug": "ibandronic-acid",
+    "classSlug": "bisphosphonates"
+  },
+  {
+    "id": 123,
+    "name": "Calcium carbonate with colecalciferol",
+    "slug": "calcium-carbonate-with-colecalciferol",
+    "classSlug": "calcium-and-vitamin-d"
+  },
+  {
+    "id": 124,
+    "name": "Colecalciferol",
+    "slug": "colecalciferol",
+    "classSlug": "calcium-and-vitamin-d"
+  },
+  {
+    "id": 125,
+    "name": "Amlodipine",
+    "slug": "amlodipine",
+    "classSlug": "calcium-channel-blockers"
+  },
+  {
+    "id": 126,
+    "name": "Nifedipine",
+    "slug": "nifedipine",
+    "classSlug": "calcium-channel-blockers"
+  },
+  {
+    "id": 127,
+    "name": "Diltiazem",
+    "slug": "diltiazem",
+    "classSlug": "calcium-channel-blockers"
+  },
+  {
+    "id": 128,
+    "name": "Verapamil",
+    "slug": "verapamil",
+    "classSlug": "calcium-channel-blockers"
+  },
+  {
+    "id": 129,
+    "name": "Felodipine",
+    "slug": "felodipine",
+    "classSlug": "calcium-channel-blockers"
+  },
+  {
+    "id": 130,
+    "name": "Carbamazepine",
+    "slug": "carbamazepine",
+    "classSlug": "carbamazepine"
+  },
+  {
+    "id": 131,
+    "name": "Cefalexin",
+    "slug": "cefalexin",
+    "classSlug": "cephalosporins-and-carbapenems"
+  },
+  {
+    "id": 132,
+    "name": "Ceftriaxone",
+    "slug": "ceftriaxone",
+    "classSlug": "cephalosporins-and-carbapenems"
+  },
+  {
+    "id": 133,
+    "name": "Cefotaxime",
+    "slug": "cefotaxime",
+    "classSlug": "cephalosporins-and-carbapenems"
+  },
+  {
+    "id": 134,
+    "name": "Cefuroxime",
+    "slug": "cefuroxime",
+    "classSlug": "cephalosporins-and-carbapenems"
+  },
+  {
+    "id": 135,
+    "name": "Meropenem",
+    "slug": "meropenem",
+    "classSlug": "cephalosporins-and-carbapenems"
+  },
+  {
+    "id": 136,
+    "name": "Ertapenem",
+    "slug": "ertapenem",
+    "classSlug": "cephalosporins-and-carbapenems"
+  },
+  {
+    "id": 137,
+    "name": "Chloramphenicol",
+    "slug": "chloramphenicol",
+    "classSlug": "chloramphenicol"
+  },
+  {
+    "id": 138,
+    "name": "Beclometasone",
+    "slug": "beclometasone",
+    "classSlug": "corticosteroids-inhaled"
+  },
+  {
+    "id": 139,
+    "name": "Budesonide",
+    "slug": "budesonide",
+    "classSlug": "corticosteroids-inhaled"
+  },
+  {
+    "id": 140,
+    "name": "Fluticasone",
+    "slug": "fluticasone",
+    "classSlug": "corticosteroids-inhaled"
+  },
+  {
+    "id": 141,
+    "name": "Prednisolone",
+    "slug": "prednisolone",
+    "classSlug": "corticosteroids-systemic"
+  },
+  {
+    "id": 142,
+    "name": "Hydrocortisone",
+    "slug": "hydrocortisone",
+    "classSlug": "corticosteroids-systemic"
+  },
+  {
+    "id": 143,
+    "name": "Dexamethasone",
+    "slug": "dexamethasone",
+    "classSlug": "corticosteroids-systemic"
+  },
+  {
+    "id": 144,
+    "name": "Methylprednisolone",
+    "slug": "methylprednisolone",
+    "classSlug": "corticosteroids-systemic"
+  },
+  {
+    "id": 145,
+    "name": "Hydrocortisone (topical)",
+    "slug": "hydrocortisone-topical",
+    "classSlug": "corticosteroids-topical"
+  },
+  {
+    "id": 146,
+    "name": "Betamethasone",
+    "slug": "betamethasone",
+    "classSlug": "corticosteroids-topical"
+  },
+  {
+    "id": 147,
+    "name": "Clobetasol",
+    "slug": "clobetasol",
+    "classSlug": "corticosteroids-topical"
+  },
+  {
+    "id": 148,
+    "name": "Clobetasone",
+    "slug": "clobetasone",
+    "classSlug": "corticosteroids-topical"
+  },
+  {
+    "id": 149,
+    "name": "Digoxin",
+    "slug": "digoxin",
+    "classSlug": "digoxin"
+  },
+  {
+    "id": 150,
+    "name": "Sitagliptin",
+    "slug": "sitagliptin",
+    "classSlug": "dpp4-inhibitors"
+  },
+  {
+    "id": 151,
+    "name": "Linagliptin",
+    "slug": "linagliptin",
+    "classSlug": "dpp4-inhibitors"
+  },
+  {
+    "id": 152,
+    "name": "Saxagliptin",
+    "slug": "saxagliptin",
+    "classSlug": "dpp4-inhibitors"
+  },
+  {
+    "id": 153,
+    "name": "Alogliptin",
+    "slug": "alogliptin",
+    "classSlug": "dpp4-inhibitors"
+  },
+  {
+    "id": 154,
+    "name": "Apixaban",
+    "slug": "apixaban",
+    "classSlug": "doacs"
+  },
+  {
+    "id": 155,
+    "name": "Rivaroxaban",
+    "slug": "rivaroxaban",
+    "classSlug": "doacs"
+  },
+  {
+    "id": 156,
+    "name": "Dabigatran",
+    "slug": "dabigatran",
+    "classSlug": "doacs"
+  },
+  {
+    "id": 157,
+    "name": "Edoxaban",
+    "slug": "edoxaban",
+    "classSlug": "doacs"
+  },
+  {
+    "id": 158,
+    "name": "Furosemide",
+    "slug": "furosemide",
+    "classSlug": "loop-diuretics"
+  },
+  {
+    "id": 159,
+    "name": "Bumetanide",
+    "slug": "bumetanide",
+    "classSlug": "loop-diuretics"
+  },
+  {
+    "id": 160,
+    "name": "Bendroflumethiazide",
+    "slug": "bendroflumethiazide",
+    "classSlug": "thiazide-diuretics"
+  },
+  {
+    "id": 161,
+    "name": "Indapamide",
+    "slug": "indapamide",
+    "classSlug": "thiazide-diuretics"
+  },
+  {
+    "id": 162,
+    "name": "Chlortalidone",
+    "slug": "chlortalidone",
+    "classSlug": "thiazide-diuretics"
+  },
+  {
+    "id": 163,
+    "name": "Co-careldopa",
+    "slug": "co-careldopa",
+    "classSlug": "dopaminergic-drugs-parkinsons"
+  },
+  {
+    "id": 164,
+    "name": "Co-beneldopa",
+    "slug": "co-beneldopa",
+    "classSlug": "dopaminergic-drugs-parkinsons"
+  },
+  {
+    "id": 165,
+    "name": "Ropinirole",
+    "slug": "ropinirole",
+    "classSlug": "dopaminergic-drugs-parkinsons"
+  },
+  {
+    "id": 166,
+    "name": "Pramipexole",
+    "slug": "pramipexole",
+    "classSlug": "dopaminergic-drugs-parkinsons"
+  },
+  {
+    "id": 167,
+    "name": "Rotigotine",
+    "slug": "rotigotine",
+    "classSlug": "dopaminergic-drugs-parkinsons"
+  },
+  {
+    "id": 168,
+    "name": "Entacapone",
+    "slug": "entacapone",
+    "classSlug": "dopaminergic-drugs-parkinsons"
+  },
+  {
+    "id": 169,
+    "name": "Aqueous cream",
+    "slug": "aqueous-cream",
+    "classSlug": "emollients"
+  },
+  {
+    "id": 170,
+    "name": "Emulsifying ointment",
+    "slug": "emulsifying-ointment",
+    "classSlug": "emollients"
+  },
+  {
+    "id": 171,
+    "name": "Liquid paraffin",
+    "slug": "liquid-paraffin",
+    "classSlug": "emollients"
+  },
+  {
+    "id": 172,
+    "name": "Alteplase",
+    "slug": "alteplase",
+    "classSlug": "fibrinolytic-drugs"
+  },
+  {
+    "id": 173,
+    "name": "Tenecteplase",
+    "slug": "tenecteplase",
+    "classSlug": "fibrinolytic-drugs"
+  },
+  {
+    "id": 174,
+    "name": "Streptokinase",
+    "slug": "streptokinase",
+    "classSlug": "fibrinolytic-drugs"
+  },
+  {
+    "id": 175,
+    "name": "Gabapentin",
+    "slug": "gabapentin",
+    "classSlug": "gabapentin-and-pregabalin"
+  },
+  {
+    "id": 176,
+    "name": "Pregabalin",
+    "slug": "pregabalin",
+    "classSlug": "gabapentin-and-pregabalin"
+  },
+  {
+    "id": 177,
+    "name": "Ranitidine",
+    "slug": "ranitidine",
+    "classSlug": "h2-receptor-antagonists"
+  },
+  {
+    "id": 178,
+    "name": "Famotidine",
+    "slug": "famotidine",
+    "classSlug": "h2-receptor-antagonists"
+  },
+  {
+    "id": 179,
+    "name": "Enoxaparin",
+    "slug": "enoxaparin",
+    "classSlug": "heparins-and-fondaparinux"
+  },
+  {
+    "id": 180,
+    "name": "Dalteparin",
+    "slug": "dalteparin",
+    "classSlug": "heparins-and-fondaparinux"
+  },
+  {
+    "id": 181,
+    "name": "Tinzaparin",
+    "slug": "tinzaparin",
+    "classSlug": "heparins-and-fondaparinux"
+  },
+  {
+    "id": 182,
+    "name": "Unfractionated heparin",
+    "slug": "unfractionated-heparin",
+    "classSlug": "heparins-and-fondaparinux"
+  },
+  {
+    "id": 183,
+    "name": "Fondaparinux",
+    "slug": "fondaparinux",
+    "classSlug": "heparins-and-fondaparinux"
+  },
+  {
+    "id": 184,
+    "name": "Insulin aspart",
+    "slug": "insulin-aspart",
+    "classSlug": "insulin"
+  },
+  {
+    "id": 185,
+    "name": "Insulin glargine",
+    "slug": "insulin-glargine",
+    "classSlug": "insulin"
+  },
+  {
+    "id": 186,
+    "name": "Insulin detemir",
+    "slug": "insulin-detemir",
+    "classSlug": "insulin"
+  },
+  {
+    "id": 187,
+    "name": "Isophane insulin",
+    "slug": "isophane-insulin",
+    "classSlug": "insulin"
+  },
+  {
+    "id": 188,
+    "name": "Insulin lispro",
+    "slug": "insulin-lispro",
+    "classSlug": "insulin"
+  },
+  {
+    "id": 189,
+    "name": "Ferrous sulfate",
+    "slug": "ferrous-sulfate",
+    "classSlug": "iron"
+  },
+  {
+    "id": 190,
+    "name": "Ferrous fumarate",
+    "slug": "ferrous-fumarate",
+    "classSlug": "iron"
+  },
+  {
+    "id": 191,
+    "name": "Iron sucrose",
+    "slug": "iron-sucrose",
+    "classSlug": "iron"
+  },
+  {
+    "id": 192,
+    "name": "Lamotrigine",
+    "slug": "lamotrigine",
+    "classSlug": "lamotrigine"
+  },
+  {
+    "id": 193,
+    "name": "Lactulose",
+    "slug": "lactulose",
+    "classSlug": "laxatives-osmotic"
+  },
+  {
+    "id": 194,
+    "name": "Macrogol",
+    "slug": "macrogol",
+    "classSlug": "laxatives-osmotic"
+  },
+  {
+    "id": 195,
+    "name": "Senna",
+    "slug": "senna",
+    "classSlug": "laxatives-stimulant"
+  },
+  {
+    "id": 196,
+    "name": "Bisacodyl",
+    "slug": "bisacodyl",
+    "classSlug": "laxatives-stimulant"
+  },
+  {
+    "id": 197,
+    "name": "Docusate",
+    "slug": "docusate",
+    "classSlug": "laxatives-stimulant"
+  },
+  {
+    "id": 198,
+    "name": "Montelukast",
+    "slug": "montelukast",
+    "classSlug": "leukotriene-receptor-antagonists"
+  },
+  {
+    "id": 199,
+    "name": "Levetiracetam",
+    "slug": "levetiracetam",
+    "classSlug": "levetiracetam"
+  },
+  {
+    "id": 200,
+    "name": "Lidocaine",
+    "slug": "lidocaine",
+    "classSlug": "lidocaine"
+  },
+  {
+    "id": 201,
+    "name": "Clarithromycin",
+    "slug": "clarithromycin",
+    "classSlug": "macrolides"
+  },
+  {
+    "id": 202,
+    "name": "Erythromycin",
+    "slug": "erythromycin",
+    "classSlug": "macrolides"
+  },
+  {
+    "id": 203,
+    "name": "Azithromycin",
+    "slug": "azithromycin",
+    "classSlug": "macrolides"
+  },
+  {
+    "id": 204,
+    "name": "Metformin",
+    "slug": "metformin",
+    "classSlug": "metformin"
+  },
+  {
+    "id": 205,
+    "name": "Methotrexate",
+    "slug": "methotrexate",
+    "classSlug": "methotrexate"
+  },
+  {
+    "id": 206,
+    "name": "Metronidazole",
+    "slug": "metronidazole",
+    "classSlug": "metronidazole"
+  },
+  {
+    "id": 207,
+    "name": "Naloxone",
+    "slug": "naloxone",
+    "classSlug": "naloxone"
+  },
+  {
+    "id": 208,
+    "name": "Nicotine",
+    "slug": "nicotine",
+    "classSlug": "nicotine-replacement"
+  },
+  {
+    "id": 209,
+    "name": "Varenicline",
+    "slug": "varenicline",
+    "classSlug": "nicotine-replacement"
+  },
+  {
+    "id": 210,
+    "name": "Bupropion",
+    "slug": "bupropion",
+    "classSlug": "nicotine-replacement"
+  },
+  {
+    "id": 211,
+    "name": "Glyceryl trinitrate",
+    "slug": "glyceryl-trinitrate",
+    "classSlug": "nitrates"
+  },
+  {
+    "id": 212,
+    "name": "Isosorbide mononitrate",
+    "slug": "isosorbide-mononitrate",
+    "classSlug": "nitrates"
+  },
+  {
+    "id": 213,
+    "name": "Isosorbide dinitrate",
+    "slug": "isosorbide-dinitrate",
+    "classSlug": "nitrates"
+  },
+  {
+    "id": 214,
+    "name": "Nitrofurantoin",
+    "slug": "nitrofurantoin",
+    "classSlug": "nitrofurantoin"
+  },
+  {
+    "id": 215,
+    "name": "Ibuprofen",
+    "slug": "ibuprofen",
+    "classSlug": "nsaids"
+  },
+  {
+    "id": 216,
+    "name": "Naproxen",
+    "slug": "naproxen",
+    "classSlug": "nsaids"
+  },
+  {
+    "id": 217,
+    "name": "Diclofenac",
+    "slug": "diclofenac",
+    "classSlug": "nsaids"
+  },
+  {
+    "id": 218,
+    "name": "Celecoxib",
+    "slug": "celecoxib",
+    "classSlug": "nsaids"
+  },
+  {
+    "id": 219,
+    "name": "Hypromellose",
+    "slug": "hypromellose",
+    "classSlug": "ocular-lubricants"
+  },
+  {
+    "id": 220,
+    "name": "Carbomer",
+    "slug": "carbomer",
+    "classSlug": "ocular-lubricants"
+  },
+  {
+    "id": 221,
+    "name": "Carmellose",
+    "slug": "carmellose",
+    "classSlug": "ocular-lubricants"
+  },
+  {
+    "id": 222,
+    "name": "Ethinylestradiol",
+    "slug": "ethinylestradiol",
+    "classSlug": "oestrogens-and-progestogens"
+  },
+  {
+    "id": 223,
+    "name": "Estradiol",
+    "slug": "estradiol",
+    "classSlug": "oestrogens-and-progestogens"
+  },
+  {
+    "id": 224,
+    "name": "Levonorgestrel",
+    "slug": "levonorgestrel",
+    "classSlug": "oestrogens-and-progestogens"
+  },
+  {
+    "id": 225,
+    "name": "Norethisterone",
+    "slug": "norethisterone",
+    "classSlug": "oestrogens-and-progestogens"
+  },
+  {
+    "id": 226,
+    "name": "Medroxyprogesterone",
+    "slug": "medroxyprogesterone",
+    "classSlug": "oestrogens-and-progestogens"
+  },
+  {
+    "id": 227,
+    "name": "Morphine",
+    "slug": "morphine",
+    "classSlug": "opioids-strong"
+  },
+  {
+    "id": 228,
+    "name": "Oxycodone",
+    "slug": "oxycodone",
+    "classSlug": "opioids-strong"
+  },
+  {
+    "id": 229,
+    "name": "Fentanyl",
+    "slug": "fentanyl",
+    "classSlug": "opioids-strong"
+  },
+  {
+    "id": 230,
+    "name": "Diamorphine",
+    "slug": "diamorphine",
+    "classSlug": "opioids-strong"
+  },
+  {
+    "id": 231,
+    "name": "Alfentanil",
+    "slug": "alfentanil",
+    "classSlug": "opioids-strong"
+  },
+  {
+    "id": 232,
+    "name": "Codeine",
+    "slug": "codeine",
+    "classSlug": "opioids-weak-moderate"
+  },
+  {
+    "id": 233,
+    "name": "Tramadol",
+    "slug": "tramadol",
+    "classSlug": "opioids-weak-moderate"
+  },
+  {
+    "id": 234,
+    "name": "Dihydrocodeine",
+    "slug": "dihydrocodeine",
+    "classSlug": "opioids-weak-moderate"
+  },
+  {
+    "id": 235,
+    "name": "Oxygen",
+    "slug": "oxygen",
+    "classSlug": "oxygen"
+  },
+  {
+    "id": 236,
+    "name": "Paracetamol",
+    "slug": "paracetamol",
+    "classSlug": "paracetamol"
+  },
+  {
+    "id": 237,
+    "name": "Benzylpenicillin",
+    "slug": "benzylpenicillin",
+    "classSlug": "penicillins"
+  },
+  {
+    "id": 238,
+    "name": "Phenoxymethylpenicillin",
+    "slug": "phenoxymethylpenicillin",
+    "classSlug": "penicillins"
+  },
+  {
+    "id": 239,
+    "name": "Piperacillin with tazobactam",
+    "slug": "piperacillin-with-tazobactam",
+    "classSlug": "penicillins-antipseudomonal"
+  },
+  {
+    "id": 240,
+    "name": "Amoxicillin",
+    "slug": "amoxicillin",
+    "classSlug": "penicillins-broad-spectrum"
+  },
+  {
+    "id": 241,
+    "name": "Co-amoxiclav",
+    "slug": "co-amoxiclav",
+    "classSlug": "penicillins-broad-spectrum"
+  },
+  {
+    "id": 242,
+    "name": "Ampicillin",
+    "slug": "ampicillin",
+    "classSlug": "penicillins-broad-spectrum"
+  },
+  {
+    "id": 243,
+    "name": "Flucloxacillin",
+    "slug": "flucloxacillin",
+    "classSlug": "penicillins-penicillinase-resistant"
+  },
+  {
+    "id": 244,
+    "name": "Sildenafil",
+    "slug": "sildenafil",
+    "classSlug": "pde5-inhibitors"
+  },
+  {
+    "id": 245,
+    "name": "Tadalafil",
+    "slug": "tadalafil",
+    "classSlug": "pde5-inhibitors"
+  },
+  {
+    "id": 246,
+    "name": "Vardenafil",
+    "slug": "vardenafil",
+    "classSlug": "pde5-inhibitors"
+  },
+  {
+    "id": 247,
+    "name": "Latanoprost",
+    "slug": "latanoprost",
+    "classSlug": "prostaglandin-analogue-eye-drops"
+  },
+  {
+    "id": 248,
+    "name": "Bimatoprost",
+    "slug": "bimatoprost",
+    "classSlug": "prostaglandin-analogue-eye-drops"
+  },
+  {
+    "id": 249,
+    "name": "Travoprost",
+    "slug": "travoprost",
+    "classSlug": "prostaglandin-analogue-eye-drops"
+  },
+  {
+    "id": 250,
+    "name": "Omeprazole",
+    "slug": "omeprazole",
+    "classSlug": "proton-pump-inhibitors"
+  },
+  {
+    "id": 251,
+    "name": "Lansoprazole",
+    "slug": "lansoprazole",
+    "classSlug": "proton-pump-inhibitors"
+  },
+  {
+    "id": 252,
+    "name": "Pantoprazole",
+    "slug": "pantoprazole",
+    "classSlug": "proton-pump-inhibitors"
+  },
+  {
+    "id": 253,
+    "name": "Esomeprazole",
+    "slug": "esomeprazole",
+    "classSlug": "proton-pump-inhibitors"
+  },
+  {
+    "id": 254,
+    "name": "Quinine",
+    "slug": "quinine",
+    "classSlug": "quinine"
+  },
+  {
+    "id": 255,
+    "name": "Ciprofloxacin",
+    "slug": "ciprofloxacin",
+    "classSlug": "quinolones"
+  },
+  {
+    "id": 256,
+    "name": "Levofloxacin",
+    "slug": "levofloxacin",
+    "classSlug": "quinolones"
+  },
+  {
+    "id": 257,
+    "name": "Moxifloxacin",
+    "slug": "moxifloxacin",
+    "classSlug": "quinolones"
+  },
+  {
+    "id": 258,
+    "name": "Sumatriptan",
+    "slug": "sumatriptan",
+    "classSlug": "serotonin-5ht1-agonists"
+  },
+  {
+    "id": 259,
+    "name": "Zolmitriptan",
+    "slug": "zolmitriptan",
+    "classSlug": "serotonin-5ht1-agonists"
+  },
+  {
+    "id": 260,
+    "name": "Rizatriptan",
+    "slug": "rizatriptan",
+    "classSlug": "serotonin-5ht1-agonists"
+  },
+  {
+    "id": 261,
+    "name": "Tamoxifen",
+    "slug": "tamoxifen",
+    "classSlug": "sex-hormone-antagonists-breast-cancer"
+  },
+  {
+    "id": 262,
+    "name": "Anastrozole",
+    "slug": "anastrozole",
+    "classSlug": "sex-hormone-antagonists-breast-cancer"
+  },
+  {
+    "id": 263,
+    "name": "Letrozole",
+    "slug": "letrozole",
+    "classSlug": "sex-hormone-antagonists-breast-cancer"
+  },
+  {
+    "id": 264,
+    "name": "Exemestane",
+    "slug": "exemestane",
+    "classSlug": "sex-hormone-antagonists-breast-cancer"
+  },
+  {
+    "id": 265,
+    "name": "Atorvastatin",
+    "slug": "atorvastatin",
+    "classSlug": "statins"
+  },
+  {
+    "id": 266,
+    "name": "Simvastatin",
+    "slug": "simvastatin",
+    "classSlug": "statins"
+  },
+  {
+    "id": 267,
+    "name": "Rosuvastatin",
+    "slug": "rosuvastatin",
+    "classSlug": "statins"
+  },
+  {
+    "id": 268,
+    "name": "Pravastatin",
+    "slug": "pravastatin",
+    "classSlug": "statins"
+  },
+  {
+    "id": 269,
+    "name": "Gliclazide",
+    "slug": "gliclazide",
+    "classSlug": "sulphonylureas"
+  },
+  {
+    "id": 270,
+    "name": "Glimepiride",
+    "slug": "glimepiride",
+    "classSlug": "sulphonylureas"
+  },
+  {
+    "id": 271,
+    "name": "Glibenclamide",
+    "slug": "glibenclamide",
+    "classSlug": "sulphonylureas"
+  },
+  {
+    "id": 272,
+    "name": "Doxycycline",
+    "slug": "doxycycline",
+    "classSlug": "tetracyclines"
+  },
+  {
+    "id": 273,
+    "name": "Lymecycline",
+    "slug": "lymecycline",
+    "classSlug": "tetracyclines"
+  },
+  {
+    "id": 274,
+    "name": "Oxytetracycline",
+    "slug": "oxytetracycline",
+    "classSlug": "tetracyclines"
+  },
+  {
+    "id": 275,
+    "name": "Minocycline",
+    "slug": "minocycline",
+    "classSlug": "tetracyclines"
+  },
+  {
+    "id": 276,
+    "name": "Levothyroxine",
+    "slug": "levothyroxine",
+    "classSlug": "thyroid-hormones"
+  },
+  {
+    "id": 277,
+    "name": "Liothyronine",
+    "slug": "liothyronine",
+    "classSlug": "thyroid-hormones"
+  },
+  {
+    "id": 278,
+    "name": "Trimethoprim",
+    "slug": "trimethoprim",
+    "classSlug": "trimethoprim"
+  },
+  {
+    "id": 279,
+    "name": "Co-trimoxazole",
+    "slug": "co-trimoxazole",
+    "classSlug": "trimethoprim"
+  },
+  {
+    "id": 280,
+    "name": "Sodium valproate",
+    "slug": "sodium-valproate",
+    "classSlug": "valproate"
+  },
+  {
+    "id": 281,
+    "name": "Vancomycin",
+    "slug": "vancomycin",
+    "classSlug": "vancomycin"
+  },
+  {
+    "id": 282,
+    "name": "Teicoplanin",
+    "slug": "teicoplanin",
+    "classSlug": "vancomycin"
+  },
+  {
+    "id": 283,
+    "name": "Thiamine",
+    "slug": "thiamine",
+    "classSlug": "vitamins"
+  },
+  {
+    "id": 284,
+    "name": "Folic acid",
+    "slug": "folic-acid",
+    "classSlug": "vitamins"
+  },
+  {
+    "id": 285,
+    "name": "Hydroxocobalamin",
+    "slug": "hydroxocobalamin",
+    "classSlug": "vitamins"
+  },
+  {
+    "id": 286,
+    "name": "Phytomenadione",
+    "slug": "phytomenadione",
+    "classSlug": "vitamins"
+  },
+  {
+    "id": 287,
+    "name": "Ascorbic acid",
+    "slug": "ascorbic-acid",
+    "classSlug": "vitamins"
+  },
+  {
+    "id": 288,
+    "name": "Warfarin",
+    "slug": "warfarin",
+    "classSlug": "warfarin"
+  },
+  {
+    "id": 289,
+    "name": "Zopiclone",
+    "slug": "zopiclone",
+    "classSlug": "z-drugs"
+  },
+  {
+    "id": 290,
+    "name": "Zolpidem",
+    "slug": "zolpidem",
+    "classSlug": "z-drugs"
+  }
+]

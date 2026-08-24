@@ -90,12 +90,16 @@ DB and auth scripts run inside `sst shell --stage local` so they can read linked
 
 Lambda entry: `apps/api/src/lambda.ts` → `apps/api/src/app.ts`.
 
-| Method     | Path              | Description                       |
-| ---------- | ----------------- | --------------------------------- |
-| `GET`      | `/api/health`     | Liveness (`{ ok: true }`)         |
-| `GET/POST` | `/api/auth/*`     | Better Auth (sign-in, session, …) |
-| `GET`      | `/doc`            | OpenAPI JSON (app routes)         |
-| `GET`      | `/reference`      | Scalar UI (Auth + App specs)      |
+| Method     | Path                     | Description                                      |
+| ---------- | ------------------------ | ------------------------------------------------ |
+| `GET`      | `/api/health`            | Liveness (`{ ok: true }`)                        |
+| `GET`      | `/api/drug-classes`      | Paginated drug classes (`page`, `pageSize`)      |
+| `GET`      | `/api/drug-classes/:slug`| Drug class by slug                               |
+| `GET`      | `/api/drugs`             | Paginated drugs (`page`, `pageSize`)             |
+| `GET`      | `/api/drugs/:slug`       | Drug by slug                                     |
+| `GET/POST` | `/api/auth/*`            | Better Auth (sign-in, session, …)                |
+| `GET`      | `/doc`                   | OpenAPI JSON (app routes)                        |
+| `GET`      | `/reference`             | Scalar UI (Auth + App specs)                     |
 
 Auth OpenAPI is also at `/api/auth/open-api/generate-schema`.
 

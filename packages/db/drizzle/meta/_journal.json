@@ -8,6 +8,20 @@
       "when": 1787108394588,
       "tag": "0000_sparkling_malice",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1787582393275,
+      "tag": "0001_salty_taskmaster",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1787583636243,
+      "tag": "0002_material_onslaught",
+      "breakpoints": true
     }
   ]
 }
