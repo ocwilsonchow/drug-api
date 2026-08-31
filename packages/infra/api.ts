@@ -6,10 +6,6 @@ import { domain } from "./domain"
 export const router = new sst.aws.Router("ApiRouter", {
   domain: `${$app.stage}.api.${domain}`,
   protection: "oac-with-edge-signing",
-  waf: {
-    rateLimitPerIp: 200,
-    logging: { include: "blocked" },
-  },
   transform: {
     cachePolicy: {
       minTtl: 0,

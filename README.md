@@ -159,10 +159,10 @@ Tables matching `mastra_*` are ignored by Drizzle Kit so an external store can s
 | -------------------- | ------------------ | ------------------------------------------------------------- |
 | `DATABASE_URL`       | `sst.Secret`       | Postgres connection string                                    |
 | `BETTER_AUTH_SECRET` | `sst.Secret`       | Better Auth signing secret                                    |
-| `ApiRouter`          | `sst.aws.Router`   | `{stage}.api.{domain}`, OAC + edge signing, WAF 200 req/IP    |
+| `ApiRouter`          | `sst.aws.Router`   | `{stage}.api.{domain}`, OAC + edge signing                    |
 | `Hono`               | `sst.aws.Function` | Handler `apps/api/src/lambda.handler`, linked to both secrets |
 
-The Router is configured not to cache (TTL 0, nothing in the cache key). WAF logs blocked requests only.
+The Router is configured not to cache (TTL 0, nothing in the cache key).
 
 AWS account, profile, and region live in `sst.config.ts`. Domain lives in `packages/infra/domain.ts`.
 
